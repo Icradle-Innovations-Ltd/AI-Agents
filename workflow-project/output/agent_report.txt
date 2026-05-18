@@ -1,0 +1,121 @@
+AUTONOMOUS STOCK ANALYSIS REPORT
+Generated: 2026-05-18 18:02:45
+============================================================
+
+TICKER: AAPL
+----------------------------------------
+Current Price: $333.25
+Trend: DOWN
+Volatility: low
+Cycles: 3
+Re-queries: 2
+Decision: UNDECIDED
+Confidence: n/a
+Need More Data: False
+Sentiment: unknown
+Stop Reason: max_cycles_reached
+
+PLAN TRACE:
+1. Build an evidence-based recommendation for AAPL | steps=6 | requery=False
+2. Build an evidence-based recommendation for AAPL | steps=0 | requery=True
+3. Build an evidence-based recommendation for AAPL | steps=4 | requery=True
+
+TOOL TRACE:
+- summarize_articles: Condense the evidence
+- analyze_sentiment: Score the tone of the articles
+- generate_insights: Convert evidence into trade ideas
+- decide_action: Choose the final action
+- fetch_articles: The current evidence is not strong enough to stop yet
+- summarize_articles: A summary is still missing
+- analyze_sentiment: Sentiment has not been computed yet
+- generate_insights: Need actionable observations
+- decide_action: Need a recommendation before stopping
+- fetch_articles: The current evidence is not strong enough to stop yet
+
+MEMORY NOTES:
+- Prior lessons considered: 27
+- Derived analysis cleared after re-query
+- AAPL: re-query recommended because confidence=0.00, decision=0.00, volatility=low
+- Prior lessons considered: 27
+- Derived analysis cleared after re-query
+
+KEY INSIGHTS:
+
+============================================================
+
+TICKER: MSFT
+----------------------------------------
+Current Price: $153.48
+Trend: UP
+Volatility: medium
+Cycles: 1
+Re-queries: 0
+Decision: BUY
+Confidence: 0.79
+Need More Data: False
+Sentiment: positive
+Stop Reason: confident_enough
+
+PLAN TRACE:
+1. Build an evidence-based recommendation for MSFT | steps=6 | requery=False
+
+TOOL TRACE:
+- fetch_articles: Bootstrap the analysis with current articles
+- format_articles: Prepare articles for the LLM
+- summarize_articles: Condense the evidence
+- analyze_sentiment: Score the tone of the articles
+- generate_insights: Convert evidence into trade ideas
+- decide_action: Choose the final action
+
+MEMORY NOTES:
+- Prior lessons considered: 28
+
+KEY INSIGHTS:
+1. The stock is in an up trend with medium volatility
+2. Recent articles show positive sentiment
+3. Market analysts are optimistic about future performance
+4. Price momentum appears favorable for near-term trading
+
+============================================================
+
+TICKER: GOOGL
+----------------------------------------
+Current Price: $355.21
+Trend: DOWN
+Volatility: low
+Cycles: 3
+Re-queries: 2
+Decision: UNDECIDED
+Confidence: n/a
+Need More Data: False
+Sentiment: unknown
+Stop Reason: max_cycles_reached
+
+PLAN TRACE:
+1. Build an evidence-based recommendation for GOOGL | steps=6 | requery=False
+2. Build an evidence-based recommendation for GOOGL | steps=0 | requery=True
+3. Build an evidence-based recommendation for GOOGL | steps=4 | requery=True
+
+TOOL TRACE:
+- summarize_articles: Condense the evidence
+- analyze_sentiment: Score the tone of the articles
+- generate_insights: Convert evidence into trade ideas
+- decide_action: Choose the final action
+- fetch_articles: The current evidence is not strong enough to stop yet
+- summarize_articles: A summary is still missing
+- analyze_sentiment: Sentiment has not been computed yet
+- generate_insights: Need actionable observations
+- decide_action: Need a recommendation before stopping
+- fetch_articles: The current evidence is not strong enough to stop yet
+
+MEMORY NOTES:
+- Prior lessons considered: 29
+- Derived analysis cleared after re-query
+- GOOGL: re-query recommended because confidence=0.00, decision=0.00, volatility=low
+- Prior lessons considered: 29
+- Derived analysis cleared after re-query
+
+KEY INSIGHTS:
+
+============================================================
+

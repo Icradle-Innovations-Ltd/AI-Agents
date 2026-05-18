@@ -1,0 +1,90 @@
+{
+  "AAPL": {
+    "stock_data": {
+      "ticker": "AAPL",
+      "current_price": 196.97,
+      "previous_close": 192.76,
+      "prices_last_5_days": [
+        193.18,
+        192.57,
+        198.68,
+        192.76,
+        196.97
+      ],
+      "dates": [
+        "2026-05-14",
+        "2026-05-15",
+        "2026-05-16",
+        "2026-05-17",
+        "2026-05-18"
+      ],
+      "trend": "up",
+      "change_percent": 1.96,
+      "volatility": "low"
+    },
+    "article_count": 3,
+    "summary": "\n        SUMMARY:\n        The articles discuss recent developments in the tech sector. Multiple sources \n        report strong earnings and positive analyst ratings. Market sentiment appears \n        bullish despite some volatility. Key themes include product innovation, \n        market expansion, and competitive positioning.\n        ",
+    "sentiment": {
+      "overall_sentiment": "positive",
+      "positive_articles": 2,
+      "neutral_articles": 1,
+      "negative_articles": 0,
+      "confidence": 0.85,
+      "key_sentiment_drivers": [
+        "Strong earnings reports",
+        "Positive analyst upgrades",
+        "New product launches"
+      ]
+    },
+    "insights": [
+      "The stock is in an up trend with low volatility",
+      "Recent articles show positive sentiment",
+      "Market analysts are optimistic about future performance",
+      "Price momentum appears favorable for near-term trading"
+    ]
+  },
+  "MSFT": {
+    "stock_data": {
+      "ticker": "MSFT",
+      "current_price": 230.13,
+      "previous_close": 230.9,
+      "prices_last_5_days": [
+        236.79,
+        233.91,
+        238.0,
+        230.9,
+        230.13
+      ],
+      "dates": [
+        "2026-05-14",
+        "2026-05-15",
+        "2026-05-16",
+        "2026-05-17",
+        "2026-05-18"
+      ],
+      "trend": "down",
+      "change_percent": -2.81,
+      "volatility": "medium"
+    },
+    "article_count": 3,
+    "summary": "\n        SUMMARY:\n        The articles discuss recent developments in the tech sector. Multiple sources \n        report strong earnings and positive analyst ratings. Market sentiment appears \n        bullish despite some volatility. Key themes include product innovation, \n        market expansion, and competitive positioning.\n        ",
+    "sentiment": {
+      "overall_sentiment": "positive",
+      "positive_articles": 2,
+      "neutral_articles": 1,
+      "negative_articles": 0,
+      "confidence": 0.85,
+      "key_sentiment_drivers": [
+        "Strong earnings reports",
+        "Positive analyst upgrades",
+        "New product launches"
+      ]
+    },
+    "insights": [
+      "The stock is in an down trend with medium volatility",
+      "Recent articles show positive sentiment",
+      "Market analysts are optimistic about future performance",
+      "Price momentum appears favorable for near-term trading"
+    ]
+  }
+}

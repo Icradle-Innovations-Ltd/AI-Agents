@@ -1,0 +1,467 @@
+{
+  "generated_at": "2026-05-18T17:01:37.552273",
+  "stocks": {
+    "AAPL": {
+      "stock_data": {
+        "ticker": "AAPL",
+        "current_price": 300.23,
+        "previous_close": 298.21,
+        "change": 2.02,
+        "change_percent": 0.68,
+        "trend": "up",
+        "volatility": "low",
+        "timestamp": "2026-05-15",
+        "data_source": "Alpha Vantage API"
+      },
+      "articles": [
+        {
+          "title": "Market Rally Benefits AAPL Stock",
+          "description": "The stock shows resilience despite broader market concerns.",
+          "published_at": "2026-05-17 17:01:37",
+          "source": "Reuters",
+          "url": "https://example-news.com/article-0"
+        },
+        {
+          "title": "AAPL Launches New Product Line",
+          "description": "Company announced record-breaking quarterly earnings with strong growth projections.",
+          "published_at": "2026-05-17 17:01:37",
+          "source": "Bloomberg",
+          "url": "https://example-news.com/article-1"
+        },
+        {
+          "title": "Analysts Raise Price Target for AAPL",
+          "description": "Strategic partnerships could drive future revenue.",
+          "published_at": "2026-05-17 17:01:37",
+          "source": "Reuters",
+          "url": "https://example-news.com/article-2"
+        }
+      ],
+      "summary": "\n        SUMMARY:\n        The articles discuss recent developments in the tech sector. Multiple sources \n        report strong earnings and positive analyst ratings. Market sentiment appears \n        bullish despite some volatility. Key themes include product innovation, \n        market expansion, and competitive positioning.\n        ",
+      "sentiment": {
+        "overall_sentiment": "positive",
+        "positive_articles": 2,
+        "neutral_articles": 1,
+        "negative_articles": 0,
+        "confidence": 0.85,
+        "key_sentiment_drivers": [
+          "Strong earnings reports",
+          "Positive analyst upgrades",
+          "New product launches"
+        ]
+      },
+      "insights": [
+        "The stock is in an up trend with low volatility",
+        "Recent articles show positive sentiment",
+        "Market analysts are optimistic about future performance",
+        "Price momentum appears favorable for near-term trading"
+      ],
+      "decision": {
+        "recommendation": "buy",
+        "confidence": 0.91,
+        "need_more_data": false,
+        "evidence_gaps": [],
+        "rationale": [
+          "Trend signal is up",
+          "Sentiment is positive",
+          "Volatility is low"
+        ],
+        "next_actions": [
+          "Monitor the next news cycle",
+          "Recheck price action if new catalysts appear"
+        ],
+        "summary": "SUMMARY:\n        The articles discuss recent developments in the tech sector. Multiple sources \n        report strong earnings and positive analyst ratings. Market sentiment appears \n        bullish despite some volatility. Key themes include product innovation, \n        market expansion, and competitive positioning."
+      },
+      "ticker": "AAPL",
+      "generated_at": "2026-05-18T17:01:37.536351",
+      "agent_trace": [
+        "Fetched 3 baseline articles"
+      ],
+      "analysis_iterations": 1
+    },
+    "MSFT": {
+      "stock_data": {
+        "ticker": "MSFT",
+        "current_price": 421.92,
+        "previous_close": 409.43,
+        "change": 12.49,
+        "change_percent": 3.05,
+        "trend": "up",
+        "volatility": "medium",
+        "timestamp": "2026-05-15",
+        "data_source": "Alpha Vantage API"
+      },
+      "articles": [
+        {
+          "title": "Regulatory Challenges Could Impact MSFT",
+          "description": "Market volatility impacts valuations across the sector.",
+          "published_at": "2026-05-16 17:01:37",
+          "source": "Reuters",
+          "url": "https://example-news.com/article-0"
+        },
+        {
+          "title": "Analysts Raise Price Target for MSFT",
+          "description": "The stock shows resilience despite broader market concerns.",
+          "published_at": "2026-05-17 17:01:37",
+          "source": "CNBC",
+          "url": "https://example-news.com/article-1"
+        },
+        {
+          "title": "MSFT Launches New Product Line",
+          "description": "Company announced record-breaking quarterly earnings with strong growth projections.",
+          "published_at": "2026-05-12 17:01:37",
+          "source": "CNBC",
+          "url": "https://example-news.com/article-2"
+        }
+      ],
+      "summary": "\n        SUMMARY:\n        The articles discuss recent developments in the tech sector. Multiple sources \n        report strong earnings and positive analyst ratings. Market sentiment appears \n        bullish despite some volatility. Key themes include product innovation, \n        market expansion, and competitive positioning.\n        ",
+      "sentiment": {
+        "overall_sentiment": "positive",
+        "positive_articles": 2,
+        "neutral_articles": 1,
+        "negative_articles": 0,
+        "confidence": 0.85,
+        "key_sentiment_drivers": [
+          "Strong earnings reports",
+          "Positive analyst upgrades",
+          "New product launches"
+        ]
+      },
+      "insights": [
+        "The stock is in an up trend with medium volatility",
+        "Recent articles show positive sentiment",
+        "Market analysts are optimistic about future performance",
+        "Price momentum appears favorable for near-term trading"
+      ],
+      "decision": {
+        "recommendation": "buy",
+        "confidence": 0.79,
+        "need_more_data": false,
+        "evidence_gaps": [],
+        "rationale": [
+          "Trend signal is up",
+          "Sentiment is positive",
+          "Volatility is medium"
+        ],
+        "next_actions": [
+          "Monitor the next news cycle",
+          "Recheck price action if new catalysts appear"
+        ],
+        "summary": "SUMMARY:\n        The articles discuss recent developments in the tech sector. Multiple sources \n        report strong earnings and positive analyst ratings. Market sentiment appears \n        bullish despite some volatility. Key themes include product innovation, \n        market expansion, and competitive positioning."
+      },
+      "ticker": "MSFT",
+      "generated_at": "2026-05-18T17:01:37.537673",
+      "agent_trace": [
+        "Fetched 3 baseline articles"
+      ],
+      "analysis_iterations": 1
+    },
+    "GOOGL": {
+      "stock_data": {
+        "ticker": "GOOGL",
+        "current_price": 396.78,
+        "previous_close": 401.07,
+        "change": -4.29,
+        "change_percent": -1.07,
+        "trend": "down",
+        "volatility": "low",
+        "timestamp": "2026-05-15",
+        "data_source": "Alpha Vantage API"
+      },
+      "articles": [
+        {
+          "title": "GOOGL Launches New Product Line",
+          "description": "Strategic partnerships could drive future revenue.",
+          "published_at": "2026-05-18 17:01:37",
+          "source": "Bloomberg",
+          "url": "https://example-news.com/article-0"
+        },
+        {
+          "title": "GOOGL Faces Market Headwinds in Q4",
+          "description": "Strategic partnerships could drive future revenue.",
+          "published_at": "2026-05-18 17:01:37",
+          "source": "Bloomberg",
+          "url": "https://example-news.com/article-1"
+        },
+        {
+          "title": "GOOGL Expands International Operations",
+          "description": "The stock shows resilience despite broader market concerns.",
+          "published_at": "2026-05-13 17:01:37",
+          "source": "Bloomberg",
+          "url": "https://example-news.com/article-2"
+        }
+      ],
+      "summary": "\n        SUMMARY:\n        The articles discuss recent developments in the tech sector. Multiple sources \n        report strong earnings and positive analyst ratings. Market sentiment appears \n        bullish despite some volatility. Key themes include product innovation, \n        market expansion, and competitive positioning.\n        ",
+      "sentiment": {
+        "overall_sentiment": "positive",
+        "positive_articles": 2,
+        "neutral_articles": 1,
+        "negative_articles": 0,
+        "confidence": 0.85,
+        "key_sentiment_drivers": [
+          "Strong earnings reports",
+          "Positive analyst upgrades",
+          "New product launches"
+        ]
+      },
+      "insights": [
+        "The stock is in an down trend with low volatility",
+        "Recent articles show positive sentiment",
+        "Market analysts are optimistic about future performance",
+        "Price momentum appears favorable for near-term trading"
+      ],
+      "decision": {
+        "recommendation": "accumulate",
+        "confidence": 0.67,
+        "need_more_data": false,
+        "evidence_gaps": [],
+        "rationale": [
+          "Trend signal is down",
+          "Sentiment is positive",
+          "Volatility is low"
+        ],
+        "next_actions": [
+          "Monitor the next news cycle",
+          "Recheck price action if new catalysts appear"
+        ],
+        "summary": "SUMMARY:\n        The articles discuss recent developments in the tech sector. Multiple sources \n        report strong earnings and positive analyst ratings. Market sentiment appears \n        bullish despite some volatility. Key themes include product innovation, \n        market expansion, and competitive positioning."
+      },
+      "ticker": "GOOGL",
+      "generated_at": "2026-05-18T17:01:37.538681",
+      "agent_trace": [
+        "Fetched 3 baseline articles"
+      ],
+      "analysis_iterations": 1
+    },
+    "TSLA": {
+      "stock_data": {
+        "ticker": "TSLA",
+        "current_price": 422.24,
+        "previous_close": 443.3,
+        "change": -21.06,
+        "change_percent": -4.75,
+        "trend": "down",
+        "volatility": "medium",
+        "timestamp": "2026-05-15",
+        "data_source": "Alpha Vantage API"
+      },
+      "articles": [
+        {
+          "title": "TSLA Launches New Product Line",
+          "description": "Market volatility impacts valuations across the sector.",
+          "published_at": "2026-05-12 17:01:37",
+          "source": "Bloomberg",
+          "url": "https://example-news.com/article-0"
+        },
+        {
+          "title": "Insider Trading Activity Detected in TSLA",
+          "description": "Strategic partnerships could drive future revenue.",
+          "published_at": "2026-05-16 17:01:37",
+          "source": "Reuters",
+          "url": "https://example-news.com/article-1"
+        },
+        {
+          "title": "Market Rally Benefits TSLA Stock",
+          "description": "Industry experts weigh in on recent developments.",
+          "published_at": "2026-05-17 17:01:37",
+          "source": "CNBC",
+          "url": "https://example-news.com/article-2"
+        }
+      ],
+      "summary": "\n        SUMMARY:\n        The articles discuss recent developments in the tech sector. Multiple sources \n        report strong earnings and positive analyst ratings. Market sentiment appears \n        bullish despite some volatility. Key themes include product innovation, \n        market expansion, and competitive positioning.\n        ",
+      "sentiment": {
+        "overall_sentiment": "positive",
+        "positive_articles": 2,
+        "neutral_articles": 1,
+        "negative_articles": 0,
+        "confidence": 0.85,
+        "key_sentiment_drivers": [
+          "Strong earnings reports",
+          "Positive analyst upgrades",
+          "New product launches"
+        ]
+      },
+      "insights": [
+        "The stock is in an down trend with medium volatility",
+        "Recent articles show positive sentiment",
+        "Market analysts are optimistic about future performance",
+        "Price momentum appears favorable for near-term trading"
+      ],
+      "decision": {
+        "recommendation": "hold",
+        "confidence": 0.55,
+        "need_more_data": false,
+        "evidence_gaps": [],
+        "rationale": [
+          "Trend signal is down",
+          "Sentiment is positive",
+          "Volatility is medium"
+        ],
+        "next_actions": [
+          "Monitor the next news cycle",
+          "Recheck price action if new catalysts appear"
+        ],
+        "summary": "SUMMARY:\n        The articles discuss recent developments in the tech sector. Multiple sources \n        report strong earnings and positive analyst ratings. Market sentiment appears \n        bullish despite some volatility. Key themes include product innovation, \n        market expansion, and competitive positioning."
+      },
+      "ticker": "TSLA",
+      "generated_at": "2026-05-18T17:01:37.539965",
+      "agent_trace": [
+        "Fetched 3 baseline articles"
+      ],
+      "analysis_iterations": 1
+    },
+    "AMZN": {
+      "stock_data": {
+        "ticker": "AMZN",
+        "current_price": 264.14,
+        "previous_close": 267.22,
+        "change": -3.08,
+        "change_percent": -1.15,
+        "trend": "down",
+        "volatility": "low",
+        "timestamp": "2026-05-15",
+        "data_source": "Alpha Vantage API"
+      },
+      "articles": [
+        {
+          "title": "Analysts Raise Price Target for AMZN",
+          "description": "The stock shows resilience despite broader market concerns.",
+          "published_at": "2026-05-16 17:01:37",
+          "source": "Reuters",
+          "url": "https://example-news.com/article-0"
+        },
+        {
+          "title": "Analysts Raise Price Target for AMZN",
+          "description": "Market volatility impacts valuations across the sector.",
+          "published_at": "2026-05-16 17:01:37",
+          "source": "CNBC",
+          "url": "https://example-news.com/article-1"
+        },
+        {
+          "title": "AMZN Faces Market Headwinds in Q4",
+          "description": "Strategic partnerships could drive future revenue.",
+          "published_at": "2026-05-18 17:01:37",
+          "source": "Bloomberg",
+          "url": "https://example-news.com/article-2"
+        }
+      ],
+      "summary": "\n        SUMMARY:\n        The articles discuss recent developments in the tech sector. Multiple sources \n        report strong earnings and positive analyst ratings. Market sentiment appears \n        bullish despite some volatility. Key themes include product innovation, \n        market expansion, and competitive positioning.\n        ",
+      "sentiment": {
+        "overall_sentiment": "positive",
+        "positive_articles": 2,
+        "neutral_articles": 1,
+        "negative_articles": 0,
+        "confidence": 0.85,
+        "key_sentiment_drivers": [
+          "Strong earnings reports",
+          "Positive analyst upgrades",
+          "New product launches"
+        ]
+      },
+      "insights": [
+        "The stock is in an down trend with low volatility",
+        "Recent articles show positive sentiment",
+        "Market analysts are optimistic about future performance",
+        "Price momentum appears favorable for near-term trading"
+      ],
+      "decision": {
+        "recommendation": "accumulate",
+        "confidence": 0.67,
+        "need_more_data": false,
+        "evidence_gaps": [],
+        "rationale": [
+          "Trend signal is down",
+          "Sentiment is positive",
+          "Volatility is low"
+        ],
+        "next_actions": [
+          "Monitor the next news cycle",
+          "Recheck price action if new catalysts appear"
+        ],
+        "summary": "SUMMARY:\n        The articles discuss recent developments in the tech sector. Multiple sources \n        report strong earnings and positive analyst ratings. Market sentiment appears \n        bullish despite some volatility. Key themes include product innovation, \n        market expansion, and competitive positioning."
+      },
+      "ticker": "AMZN",
+      "generated_at": "2026-05-18T17:01:37.540873",
+      "agent_trace": [
+        "Fetched 3 baseline articles"
+      ],
+      "analysis_iterations": 1
+    },
+    "NFLX": {
+      "stock_data": {
+        "ticker": "NFLX",
+        "current_price": 87.02,
+        "previous_close": 86.94,
+        "change": 0.08,
+        "change_percent": 0.09,
+        "trend": "up",
+        "volatility": "low",
+        "timestamp": "2026-05-15",
+        "data_source": "Alpha Vantage API"
+      },
+      "articles": [
+        {
+          "title": "Insider Trading Activity Detected in NFLX",
+          "description": "Strategic partnerships could drive future revenue.",
+          "published_at": "2026-05-14 17:01:37",
+          "source": "MarketWatch",
+          "url": "https://example-news.com/article-0"
+        },
+        {
+          "title": "NFLX Surges After Strong Earnings Report",
+          "description": "Industry experts weigh in on recent developments.",
+          "published_at": "2026-05-16 17:01:37",
+          "source": "MarketWatch",
+          "url": "https://example-news.com/article-1"
+        },
+        {
+          "title": "NFLX Faces Market Headwinds in Q4",
+          "description": "Major investment firms increased their positions in the stock.",
+          "published_at": "2026-05-16 17:01:37",
+          "source": "CNBC",
+          "url": "https://example-news.com/article-2"
+        }
+      ],
+      "summary": "\n        SUMMARY:\n        The articles discuss recent developments in the tech sector. Multiple sources \n        report strong earnings and positive analyst ratings. Market sentiment appears \n        bullish despite some volatility. Key themes include product innovation, \n        market expansion, and competitive positioning.\n        ",
+      "sentiment": {
+        "overall_sentiment": "positive",
+        "positive_articles": 2,
+        "neutral_articles": 1,
+        "negative_articles": 0,
+        "confidence": 0.85,
+        "key_sentiment_drivers": [
+          "Strong earnings reports",
+          "Positive analyst upgrades",
+          "New product launches"
+        ]
+      },
+      "insights": [
+        "The stock is in an up trend with low volatility",
+        "Recent articles show positive sentiment",
+        "Market analysts are optimistic about future performance",
+        "Price momentum appears favorable for near-term trading"
+      ],
+      "decision": {
+        "recommendation": "buy",
+        "confidence": 0.91,
+        "need_more_data": false,
+        "evidence_gaps": [],
+        "rationale": [
+          "Trend signal is up",
+          "Sentiment is positive",
+          "Volatility is low"
+        ],
+        "next_actions": [
+          "Monitor the next news cycle",
+          "Recheck price action if new catalysts appear"
+        ],
+        "summary": "SUMMARY:\n        The articles discuss recent developments in the tech sector. Multiple sources \n        report strong earnings and positive analyst ratings. Market sentiment appears \n        bullish despite some volatility. Key themes include product innovation, \n        market expansion, and competitive positioning."
+      },
+      "ticker": "NFLX",
+      "generated_at": "2026-05-18T17:01:37.541987",
+      "agent_trace": [
+        "Fetched 3 baseline articles"
+      ],
+      "analysis_iterations": 1
+    }
+  }
+}

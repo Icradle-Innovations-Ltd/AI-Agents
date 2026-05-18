@@ -1,0 +1,25 @@
+{
+  "generated": "2026-05-18 18:02:45",
+  "stocks": {
+    "AAPL": {
+      "price": 333.25,
+      "trend": "down",
+      "insights": []
+    },
+    "MSFT": {
+      "price": 153.48,
+      "trend": "up",
+      "insights": [
+        "The stock is in an up trend with medium volatility",
+        "Recent articles show positive sentiment",
+        "Market analysts are optimistic about future performance",
+        "Price momentum appears favorable for near-term trading"
+      ]
+    },
+    "GOOGL": {
+      "price": 355.21,
+      "trend": "down",
+      "insights": []
+    }
+  }
+}
