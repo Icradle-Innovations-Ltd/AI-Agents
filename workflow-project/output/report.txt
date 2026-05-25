@@ -1,0 +1,82 @@
+STOCK ANALYSIS REPORT
+Generated: 2026-05-19 11:54:05
+======================================================================
+
+TICKER: AAPL
+----------------------------------------------------------------------
+Current Price: $297.84
+Change: -0.8%
+Trend: DOWN
+Data Source: Alpha Vantage API
+
+SUMMARY:
+
+        SUMMARY:
+        The articles discuss recent developments in the tech sector. Multiple sources 
+        report strong earnings and positive analyst ratings. Market sentiment appears 
+        bullish despite some volatility. Key themes include product innovation, 
+        market expansion, and competitive positioning.
+        
+
+SENTIMENT: POSITIVE
+
+INSIGHTS:
+1. The stock is in an down trend with low volatility
+2. Recent articles show positive sentiment
+3. Market analysts are optimistic about future performance
+4. Price momentum appears favorable for near-term trading
+
+======================================================================
+
+TICKER: MSFT
+----------------------------------------------------------------------
+Current Price: $423.54
+Change: 0.38%
+Trend: UP
+Data Source: Alpha Vantage API
+
+SUMMARY:
+
+        SUMMARY:
+        The articles discuss recent developments in the tech sector. Multiple sources 
+        report strong earnings and positive analyst ratings. Market sentiment appears 
+        bullish despite some volatility. Key themes include product innovation, 
+        market expansion, and competitive positioning.
+        
+
+SENTIMENT: POSITIVE
+
+INSIGHTS:
+1. The stock is in an up trend with low volatility
+2. Recent articles show positive sentiment
+3. Market analysts are optimistic about future performance
+4. Price momentum appears favorable for near-term trading
+
+======================================================================
+
+TICKER: GOOGL
+----------------------------------------------------------------------
+Current Price: $396.94
+Change: 0.04%
+Trend: UP
+Data Source: Alpha Vantage API
+
+SUMMARY:
+
+        SUMMARY:
+        The articles discuss recent developments in the tech sector. Multiple sources 
+        report strong earnings and positive analyst ratings. Market sentiment appears 
+        bullish despite some volatility. Key themes include product innovation, 
+        market expansion, and competitive positioning.
+        
+
+SENTIMENT: POSITIVE
+
+INSIGHTS:
+1. The stock is in an up trend with low volatility
+2. Recent articles show positive sentiment
+3. Market analysts are optimistic about future performance
+4. Price momentum appears favorable for near-term trading
+
+======================================================================
+

@@ -1,25 +1,35 @@
 {
-  "generated": "2026-05-18 18:02:45",
+  "generated": "2026-05-19 11:54:05",
   "stocks": {
     "AAPL": {
-      "price": 333.25,
+      "price": 297.84,
       "trend": "down",
-      "insights": []
+      "insights": [
+        "The stock is in an down trend with low volatility",
+        "Recent articles show positive sentiment",
+        "Market analysts are optimistic about future performance",
+        "Price momentum appears favorable for near-term trading"
+      ]
     },
     "MSFT": {
-      "price": 153.48,
+      "price": 423.54,
       "trend": "up",
       "insights": [
-        "The stock is in an up trend with medium volatility",
+        "The stock is in an up trend with low volatility",
         "Recent articles show positive sentiment",
         "Market analysts are optimistic about future performance",
         "Price momentum appears favorable for near-term trading"
       ]
     },
     "GOOGL": {
-      "price": 355.21,
-      "trend": "down",
-      "insights": []
+      "price": 396.94,
+      "trend": "up",
+      "insights": [
+        "The stock is in an up trend with low volatility",
+        "Recent articles show positive sentiment",
+        "Market analysts are optimistic about future performance",
+        "Price momentum appears favorable for near-term trading"
+      ]
     }
   }
 }
