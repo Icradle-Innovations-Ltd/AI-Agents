@@ -16,13 +16,18 @@ from main_workflow import StockAnalysisWorkflow
 
 
 APP_TITLE = "Deploy, Observe, Learn"
-APP_SUBTITLE = "A production-agent demo: fixed workflow beside a tool-driven agent with memory."
+APP_SUBTITLE = "Production agents need a loop: run, inspect, re-query, remember."
 OUTPUT_DIR = Path("output")
 MEMORY_PATH = OUTPUT_DIR / "agent_memory.json"
 DEFAULT_DEMO_STOCKS = ["AAPL", "MSFT", "TSLA"]
 
 
-st.set_page_config(page_title=f"{APP_TITLE} | Stock Intelligence Studio", page_icon="📈", layout="wide")
+st.set_page_config(
+    page_title=f"{APP_TITLE} | Stock Intelligence Studio",
+    page_icon="📈",
+    layout="wide",
+    initial_sidebar_state="collapsed",
+)
 
 
 def inject_styles():
@@ -46,8 +51,20 @@ def inject_styles():
             visibility: hidden !important;
             height: 0 !important;
         }
+        section[data-testid="stSidebar"],
+        button[kind="header"],
+        button[title="View fullscreen"] {
+            display: none !important;
+            visibility: hidden !important;
+        }
+        div[data-testid="stAppViewBlockContainer"] {
+            max-width: 1180px !important;
+            padding-top: 2.6rem !important;
+            padding-left: 2rem !important;
+            padding-right: 2rem !important;
+        }
         .hero {
-            padding: 2rem 2rem 1.4rem 2rem;
+            padding: 1.7rem 2rem 1.35rem 2rem;
             border-radius: 8px;
             border: 1px solid rgba(19, 34, 56, 0.06);
             background: #ffffff;
@@ -64,13 +81,13 @@ def inject_styles():
             margin-bottom: 0.35rem;
         }
         .hero h1 {
-            font-size: 2.4rem;
+            font-size: 2.55rem;
             line-height: 1.02;
             margin-bottom: 0.4rem;
             color: #0f1724;
         }
         .hero p {
-            font-size: 1rem;
+            font-size: 1.03rem;
             max-width: 72ch;
             color: #334155;
             margin-bottom: 0;
@@ -182,6 +199,41 @@ def inject_styles():
             color: #ffffff !important;
             box-shadow: 0 8px 20px rgba(226,83,50,0.16) !important;
         }
+        .control-band {
+            background: #ffffff;
+            border: 1px solid rgba(7,17,51,0.06);
+            border-radius: 8px;
+            box-shadow: 0 8px 20px rgba(17,24,39,0.05);
+            padding: 0.9rem 1rem 0.4rem 1rem;
+            margin: 0.2rem 0 1rem 0;
+        }
+        .control-band-title {
+            font-size: 0.72rem;
+            font-weight: 800;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #475569;
+            margin-bottom: 0.5rem;
+        }
+        div[data-baseweb="select"] > div {
+            background: #ffffff !important;
+            border: 1px solid rgba(7,17,51,0.12) !important;
+            box-shadow: 0 4px 14px rgba(17,24,39,0.04) !important;
+        }
+        div[data-baseweb="select"] svg {
+            color: #071133 !important;
+            fill: #071133 !important;
+        }
+        div[data-baseweb="tag"] {
+            background: #f0524d !important;
+            color: #ffffff !important;
+            border-radius: 6px !important;
+        }
+        div[data-baseweb="tag"] span,
+        div[data-baseweb="tag"] svg {
+            color: #ffffff !important;
+            fill: #ffffff !important;
+        }
         div[role="tablist"] > button[aria-selected="true"] * {
             color: #ffffff !important;
         }
@@ -190,62 +242,9 @@ def inject_styles():
         html, body, .stApp, section[data-testid="stAppViewContainer"] {
             height: 100% !important;
         }
-        section[data-testid="stAppViewContainer"] > div {
-            max-height: calc(100vh - 80px) !important;
+        div[data-testid="stAppViewBlockContainer"] {
+            max-height: 100vh !important;
             overflow-y: auto !important;
-            padding-right: 8px !important;
-        }
-
-        /* Make the Streamlit sidebar white and fixed on desktop so it does not darken content */
-        section[data-testid="stSidebar"], div[data-testid="stSidebar"] {
-            background: #ffffff !important;
-            color: #071133 !important;
-            z-index: 1200 !important;
-            padding: 1.2rem !important;
-            width: 300px !important;
-            box-shadow: 4px 0 20px rgba(2,6,23,0.06) !important;
-            border-right: 1px solid rgba(7,17,51,0.04) !important;
-        }
-        /* Sidebar inner cards (multiselect, checkboxes) contrast */
-        section[data-testid="stSidebar"] *, div[data-testid="stSidebar"] * {
-            color: #071133 !important;
-        }
-        section[data-testid="stSidebar"] .stMultiSelect, section[data-testid="stSidebar"] .stCheckbox,
-        div[data-testid="stSidebar"] .stMultiSelect, div[data-testid="stSidebar"] .stCheckbox {
-            color: #071133 !important;
-        }
-        /* Multiselect tags: ensure text is dark on colored chips */
-        section[data-testid="stSidebar"] .css-1lc0dpe div[role="option"] span, section[data-testid="stSidebar"] .css-1lc0dpe button,
-        div[data-testid="stSidebar"] .css-1lc0dpe div[role="option"] span, div[data-testid="stSidebar"] .css-1lc0dpe button {
-            color: #071133 !important;
-        }
-        section[data-testid="stSidebar"] div[data-baseweb="select"] > div {
-            background: #ffffff !important;
-            border: 1px solid rgba(7,17,51,0.12) !important;
-            box-shadow: none !important;
-        }
-        section[data-testid="stSidebar"] div[data-baseweb="select"] svg {
-            color: #071133 !important;
-            fill: #071133 !important;
-        }
-
-        /* On wider screens, push main content right so the sidebar doesn't cover it */
-        @media (min-width: 900px) {
-            div[data-testid="stAppViewBlockContainer"] {
-                margin-left: 300px !important;
-                width: calc(100vw - 300px) !important;
-                max-width: calc(100vw - 300px) !important;
-                padding-left: 2rem !important;
-                padding-right: 2rem !important;
-                max-height: calc(100vh - 40px) !important;
-                overflow-y: auto !important;
-            }
-            section[data-testid="stSidebar"], div[data-testid="stSidebar"] {
-                position: fixed !important;
-                left: 0 !important;
-                top: 0 !important;
-                height: 100vh !important;
-            }
         }
 
         /* Custom scrollbar for WebKit browsers */
@@ -271,7 +270,7 @@ def inject_styles():
                 background: #f7f8fb !important;
                 color: #071133 !important;
             }
-            .hero, .glass-card, .summary-box, section[data-testid="stSidebar"], div[data-testid="stSidebar"], div[role="tabpanel"] {
+            .hero, .glass-card, .summary-box, .control-band, div[role="tabpanel"] {
                 background: #ffffff !important;
                 color: #071133 !important;
                 border: 1px solid rgba(7,17,51,0.06) !important;
@@ -282,10 +281,6 @@ def inject_styles():
                 color: #071133 !important;
                 border: 1px solid rgba(7,17,51,0.08) !important;
             }
-            section[data-testid="stSidebar"] .stMultiSelect, section[data-testid="stSidebar"] .stCheckbox,
-            div[data-testid="stSidebar"] .stMultiSelect, div[data-testid="stSidebar"] .stCheckbox {
-                color: #071133 !important;
-            }
         }
 
         /* Stronger rules for markdown content and headings */
@@ -294,7 +289,7 @@ def inject_styles():
         }
 
         /* Ensure cards and summaries sit above decorative backgrounds */
-        .hero, .glass-card, .summary-box, .stTabs, div[role="tabpanel"] {
+        .hero, .glass-card, .summary-box, .control-band, .stTabs, div[role="tabpanel"] {
             background: #ffffff !important;
             z-index: 50 !important;
         }
@@ -304,6 +299,15 @@ def inject_styles():
             background: rgba(230,240,255,0.98) !important;
             color: #071133 !important;
             border: 1px solid rgba(7,17,51,0.06) !important;
+        }
+        @media (max-width: 900px) {
+            div[data-testid="stAppViewBlockContainer"] {
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
         }
         </style>
         """,
@@ -322,7 +326,7 @@ def load_agent_memory() -> dict:
 
 def pick_stocks() -> list[str]:
     default_stocks = [ticker for ticker in DEFAULT_DEMO_STOCKS if ticker in STOCKS]
-    selected = st.sidebar.multiselect(
+    selected = st.multiselect(
         "Stocks to analyze",
         options=list(STOCKS.keys()),
         default=default_stocks or get_selected_stocks()[:3],
@@ -372,25 +376,39 @@ def render_overview(mode: str, stocks: list[str], memory: dict):
         st.markdown(
             f"""
             <div class="glass-card">
-                <div class="metric-label">Memory Runs</div>
+                <div class="metric-label">Learn Loop</div>
                 <div class="metric-value">{runs}</div>
-                <div class="metric-note">Stored agent runs on disk</div>
+                <div class="metric-note">Persisted lessons from agent runs</div>
             </div>
             """,
             unsafe_allow_html=True,
         )
     with cols[3]:
-        latest = memory.get("last_run_at", "No saved memory yet") if isinstance(memory, dict) else "No saved memory yet"
         st.markdown(
             f"""
             <div class="glass-card">
-                <div class="metric-label">Last Memory</div>
-                <div class="metric-value">Saved</div>
-                <div class="metric-note">{latest}</div>
+                <div class="metric-label">Demo Signal</div>
+                <div class="metric-value">TSLA</div>
+                <div class="metric-note">Volatility should trigger watch/re-query</div>
             </div>
             """,
             unsafe_allow_html=True,
         )
+
+
+def render_demo_controls():
+    st.markdown('<div class="control-band-title">Demo controls</div>', unsafe_allow_html=True)
+    control_cols = st.columns([1.2, 2.2, 0.9, 0.9])
+    with control_cols[0]:
+        mode = st.radio("Mode", ["workflow", "agent"], index=1, horizontal=True)
+    with control_cols[1]:
+        stocks = pick_stocks()
+    with control_cols[2]:
+        show_memory = st.checkbox("Memory", value=True)
+    with control_cols[3]:
+        run_outputs = st.checkbox("Save", value=True)
+
+    return mode, stocks, show_memory, run_outputs
 
 
 def render_results_table(results: dict):
@@ -507,13 +525,7 @@ def main():
     inject_styles()
     render_hero()
 
-    st.sidebar.title("Demo Controls")
-    mode = st.sidebar.radio("Select mode", ["workflow", "agent"], index=1)
-    stocks = pick_stocks()
-    show_memory = st.sidebar.checkbox("Show persisted agent memory", value=True)
-    run_outputs = st.sidebar.checkbox("Save output files", value=True)
-
-    st.sidebar.caption("Workflow mode is fixed and repeatable. Agent mode plans, re-queries, and remembers.")
+    mode, stocks, show_memory, run_outputs = render_demo_controls()
 
     memory = load_agent_memory() if show_memory else {}
     render_overview(mode, stocks, memory)
@@ -564,11 +576,6 @@ def main():
             render_memory_panel(load_agent_memory())
     else:
         st.info("Ready for the live demo.")
-
-    st.markdown("---")
-    st.caption(
-        "Workflow mode is ideal for repeatable reporting. Agent mode is for autonomous decision-making, re-querying, and stateful runs."
-    )
 
 
 if __name__ == "__main__":
