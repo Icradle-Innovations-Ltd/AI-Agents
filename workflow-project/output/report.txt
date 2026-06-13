@@ -1,13 +1,13 @@
 STOCK ANALYSIS REPORT
-Generated: 2026-05-19 11:54:05
+Generated: 2026-06-13 09:54:42
 ======================================================================
 
 TICKER: AAPL
 ----------------------------------------------------------------------
-Current Price: $297.84
-Change: -0.8%
-Trend: DOWN
-Data Source: Alpha Vantage API
+Current Price: $395.78
+Change: 1.66%
+Trend: UP
+Data Source: Mock Data (for testing)
 
 SUMMARY:
 
@@ -21,19 +21,19 @@ SUMMARY:
 SENTIMENT: POSITIVE
 
 INSIGHTS:
-1. The stock is in an down trend with low volatility
+1. The stock is in an up trend with low volatility
 2. Recent articles show positive sentiment
 3. Market analysts are optimistic about future performance
-4. Price momentum appears favorable for near-term trading
+4. Price momentum appears favorable for near-term monitoring
 
 ======================================================================
 
 TICKER: MSFT
 ----------------------------------------------------------------------
-Current Price: $423.54
-Change: 0.38%
+Current Price: $360.77
+Change: 0.8%
 Trend: UP
-Data Source: Alpha Vantage API
+Data Source: Mock Data (for testing)
 
 SUMMARY:
 
@@ -50,16 +50,16 @@ INSIGHTS:
 1. The stock is in an up trend with low volatility
 2. Recent articles show positive sentiment
 3. Market analysts are optimistic about future performance
-4. Price momentum appears favorable for near-term trading
+4. Price momentum appears favorable for near-term monitoring
 
 ======================================================================
 
-TICKER: GOOGL
+TICKER: TSLA
 ----------------------------------------------------------------------
-Current Price: $396.94
-Change: 0.04%
-Trend: UP
-Data Source: Alpha Vantage API
+Current Price: $342.23
+Change: -6.4%
+Trend: DOWN
+Data Source: Mock Data (for testing)
 
 SUMMARY:
 
@@ -73,10 +73,10 @@ SUMMARY:
 SENTIMENT: POSITIVE
 
 INSIGHTS:
-1. The stock is in an up trend with low volatility
+1. The stock is in a down trend with high volatility
 2. Recent articles show positive sentiment
 3. Market analysts are optimistic about future performance
-4. Price momentum appears favorable for near-term trading
+4. Elevated volatility makes this a watchlist candidate before action
 
 ======================================================================
 

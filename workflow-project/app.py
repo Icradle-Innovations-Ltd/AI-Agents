@@ -15,13 +15,14 @@ from config import OUTPUT_FORMATS, STOCKS, get_selected_stocks
 from main_workflow import StockAnalysisWorkflow
 
 
-APP_TITLE = "Stock Intelligence Studio"
-APP_SUBTITLE = "Run the fixed workflow or the autonomous agent from one polished dashboard."
+APP_TITLE = "Deploy, Observe, Learn"
+APP_SUBTITLE = "A production-agent demo: fixed workflow beside a tool-driven agent with memory."
 OUTPUT_DIR = Path("output")
 MEMORY_PATH = OUTPUT_DIR / "agent_memory.json"
+DEFAULT_DEMO_STOCKS = ["AAPL", "MSFT", "TSLA"]
 
 
-st.set_page_config(page_title=APP_TITLE, page_icon="📈", layout="wide")
+st.set_page_config(page_title=f"{APP_TITLE} | Stock Intelligence Studio", page_icon="📈", layout="wide")
 
 
 def inject_styles():
@@ -29,12 +30,25 @@ def inject_styles():
         """
         <style>
         .stApp {
-            background: #ffffff !important;
+            background: #f7f8fb !important;
             color: #071133;
+        }
+        html, body, section[data-testid="stAppViewContainer"] {
+            background: #f7f8fb !important;
+            color: #071133 !important;
+        }
+        header[data-testid="stHeader"],
+        div[data-testid="stToolbar"],
+        div[data-testid="stDecoration"],
+        #MainMenu,
+        footer {
+            display: none !important;
+            visibility: hidden !important;
+            height: 0 !important;
         }
         .hero {
             padding: 2rem 2rem 1.4rem 2rem;
-            border-radius: 20px;
+            border-radius: 8px;
             border: 1px solid rgba(19, 34, 56, 0.06);
             background: #ffffff;
             backdrop-filter: blur(6px);
@@ -63,7 +77,7 @@ def inject_styles():
         }
         .glass-card {
             padding: 1rem 1rem;
-            border-radius: 12px;
+            border-radius: 8px;
             background: #ffffff;
             border: 1px solid rgba(19, 34, 56, 0.06);
             box-shadow: 0 8px 20px rgba(17, 24, 39, 0.05);
@@ -101,7 +115,7 @@ def inject_styles():
         }
         .summary-box {
             padding: 0.9rem 0.95rem;
-            border-radius: 12px;
+            border-radius: 8px;
             background: #ffffff;
             border: 1px solid rgba(19, 34, 56, 0.06);
         }
@@ -130,7 +144,7 @@ def inject_styles():
             border: 1px solid rgba(7,17,51,0.06) !important;
             box-shadow: 0 6px 18px rgba(7, 17, 51, 0.06) !important;
             padding: 0.6rem 1rem !important;
-            border-radius: 10px !important;
+            border-radius: 8px !important;
             font-weight: 700 !important;
         }
         .stButton>button:hover, .stButton button:hover {
@@ -164,9 +178,12 @@ def inject_styles():
             border-radius: 8px !important;
         }
         div[role="tablist"] > button[aria-selected="true"] {
-            background: #071133 !important;
+            background: #e25332 !important;
             color: #ffffff !important;
-            box-shadow: 0 8px 20px rgba(7,17,51,0.12) !important;
+            box-shadow: 0 8px 20px rgba(226,83,50,0.16) !important;
+        }
+        div[role="tablist"] > button[aria-selected="true"] * {
+            color: #ffffff !important;
         }
 
         /* Ensure the main app container can scroll vertically on overflow */
@@ -180,7 +197,7 @@ def inject_styles():
         }
 
         /* Make the Streamlit sidebar white and fixed on desktop so it does not darken content */
-        div[data-testid="stSidebar"] {
+        section[data-testid="stSidebar"], div[data-testid="stSidebar"] {
             background: #ffffff !important;
             color: #071133 !important;
             z-index: 1200 !important;
@@ -190,21 +207,40 @@ def inject_styles():
             border-right: 1px solid rgba(7,17,51,0.04) !important;
         }
         /* Sidebar inner cards (multiselect, checkboxes) contrast */
+        section[data-testid="stSidebar"] *, div[data-testid="stSidebar"] * {
+            color: #071133 !important;
+        }
+        section[data-testid="stSidebar"] .stMultiSelect, section[data-testid="stSidebar"] .stCheckbox,
         div[data-testid="stSidebar"] .stMultiSelect, div[data-testid="stSidebar"] .stCheckbox {
             color: #071133 !important;
         }
         /* Multiselect tags: ensure text is dark on colored chips */
+        section[data-testid="stSidebar"] .css-1lc0dpe div[role="option"] span, section[data-testid="stSidebar"] .css-1lc0dpe button,
         div[data-testid="stSidebar"] .css-1lc0dpe div[role="option"] span, div[data-testid="stSidebar"] .css-1lc0dpe button {
             color: #071133 !important;
+        }
+        section[data-testid="stSidebar"] div[data-baseweb="select"] > div {
+            background: #ffffff !important;
+            border: 1px solid rgba(7,17,51,0.12) !important;
+            box-shadow: none !important;
+        }
+        section[data-testid="stSidebar"] div[data-baseweb="select"] svg {
+            color: #071133 !important;
+            fill: #071133 !important;
         }
 
         /* On wider screens, push main content right so the sidebar doesn't cover it */
         @media (min-width: 900px) {
-            section[data-testid="stAppViewContainer"] > div {
-                margin-left: 320px !important;
+            div[data-testid="stAppViewBlockContainer"] {
+                margin-left: 300px !important;
+                width: calc(100vw - 300px) !important;
+                max-width: calc(100vw - 300px) !important;
+                padding-left: 2rem !important;
+                padding-right: 2rem !important;
                 max-height: calc(100vh - 40px) !important;
+                overflow-y: auto !important;
             }
-            div[data-testid="stSidebar"] {
+            section[data-testid="stSidebar"], div[data-testid="stSidebar"] {
                 position: fixed !important;
                 left: 0 !important;
                 top: 0 !important;
@@ -229,26 +265,26 @@ def inject_styles():
             color: #071133 !important;
         }
 
-        /* Respect user/device dark mode but keep buttons and cards high-contrast */
+        /* Keep the projector/demo theme stable even when the OS uses dark mode. */
         @media (prefers-color-scheme: dark) {
-            .stApp {
-                background: #0b1220 !important;
-                color: #e6eef8 !important;
+            html, body, .stApp, section[data-testid="stAppViewContainer"] {
+                background: #f7f8fb !important;
+                color: #071133 !important;
             }
-            .hero, .glass-card, .summary-box, div[data-testid="stSidebar"], div[role="tabpanel"] {
-                background: #0f1724 !important;
-                color: #e6eef8 !important;
-                border: 1px solid rgba(230,240,255,0.03) !important;
-                box-shadow: 0 8px 30px rgba(2,6,23,0.6) !important;
+            .hero, .glass-card, .summary-box, section[data-testid="stSidebar"], div[data-testid="stSidebar"], div[role="tabpanel"] {
+                background: #ffffff !important;
+                color: #071133 !important;
+                border: 1px solid rgba(7,17,51,0.06) !important;
+                box-shadow: 0 8px 20px rgba(17,24,39,0.05) !important;
             }
-            /* Keep primary buttons light to remain readable on dark themes */
             .stButton>button, .stButton button, button.stButton {
-                background-color: #f8fafc !important;
+                background-color: #ffffff !important;
                 color: #071133 !important;
                 border: 1px solid rgba(7,17,51,0.08) !important;
             }
+            section[data-testid="stSidebar"] .stMultiSelect, section[data-testid="stSidebar"] .stCheckbox,
             div[data-testid="stSidebar"] .stMultiSelect, div[data-testid="stSidebar"] .stCheckbox {
-                color: #e6eef8 !important;
+                color: #071133 !important;
             }
         }
 
@@ -285,10 +321,11 @@ def load_agent_memory() -> dict:
 
 
 def pick_stocks() -> list[str]:
+    default_stocks = [ticker for ticker in DEFAULT_DEMO_STOCKS if ticker in STOCKS]
     selected = st.sidebar.multiselect(
         "Stocks to analyze",
         options=list(STOCKS.keys()),
-        default=get_selected_stocks()[:3],
+        default=default_stocks or get_selected_stocks()[:3],
     )
     return selected or get_selected_stocks()[:3]
 
@@ -297,7 +334,7 @@ def render_hero():
     st.markdown(
         f"""
         <div class="hero">
-            <div class="eyebrow">Workflow + Agent Dashboard</div>
+            <div class="eyebrow">Build //localhost:Mbarara</div>
             <h1>{APP_TITLE}</h1>
             <p>{APP_SUBTITLE}</p>
         </div>
@@ -470,7 +507,7 @@ def main():
     inject_styles()
     render_hero()
 
-    st.sidebar.title("Controls")
+    st.sidebar.title("Demo Controls")
     mode = st.sidebar.radio("Select mode", ["workflow", "agent"], index=1)
     stocks = pick_stocks()
     show_memory = st.sidebar.checkbox("Show persisted agent memory", value=True)
@@ -526,7 +563,7 @@ def main():
         with tab_memory:
             render_memory_panel(load_agent_memory())
     else:
-        st.info("Choose a mode and run it to generate live results.")
+        st.info("Ready for the live demo.")
 
     st.markdown("---")
     st.caption(

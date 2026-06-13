@@ -52,7 +52,7 @@ class StockAnalysisWorkflow:
         # STEP 1: Retrieve stock data
         print("STEP 1: Retrieving stock data...")
         stock_data = get_multiple_stocks(self.stocks)
-        print("✓ Stock data retrieved\n")
+        print("[OK] Stock data retrieved\n")
         
         # Process each stock
         for ticker in self.stocks:
@@ -65,22 +65,22 @@ class StockAnalysisWorkflow:
             print("  STEP 2: Fetching articles...")
             articles = get_stock_articles(ticker, count=3)
             articles_text = format_articles_for_processing(articles)
-            print(f"  ✓ Fetched {len(articles)} articles\n")
+            print(f"  [OK] Fetched {len(articles)} articles\n")
             
             # STEP 3: Summarize articles
             print("  STEP 3: Summarizing articles with LLM...")
             summary = self.processor.summarize_articles(articles_text)
-            print("  ✓ Summary generated\n")
+            print("  [OK] Summary generated\n")
             
             # STEP 4: Analyze sentiment
             print("  STEP 4: Analyzing sentiment...")
             sentiment = self.processor.analyze_sentiment(articles_text)
-            print(f"  ✓ Sentiment analyzed: {sentiment['overall_sentiment'].upper()}\n")
+            print(f"  [OK] Sentiment analyzed: {sentiment['overall_sentiment'].upper()}\n")
             
             # STEP 5: Generate insights
             print("  STEP 5: Generating insights...")
             insights = self.processor.generate_insights(data, articles_text, sentiment)
-            print("  ✓ Insights generated\n")
+            print("  [OK] Insights generated\n")
             
             # Store results
             self.results[ticker] = {
@@ -171,7 +171,7 @@ class StockAnalysisWorkflow:
         formatter = OutputFormatter(self.results)
         saved_files = formatter.save_all_formats(output_dir)
         
-        print(f"✓ All outputs saved to {output_dir}")
+        print(f"[OK] All outputs saved to {output_dir}")
         print(f"  Files: {len(saved_files)} generated")
 
 
@@ -205,7 +205,7 @@ def main():
 
         print("\nSaving outputs in multiple formats...")
         runner.save_outputs("./output")
-        print("✓ Agent outputs saved!\n")
+        print("[OK] Agent outputs saved!\n")
         return
     
     # Run the workflow with stocks from config
@@ -221,7 +221,7 @@ def main():
     # Save outputs in all formats
     print("\nSaving outputs in multiple formats...")
     workflow.save_outputs("./output")
-    print("✓ All outputs saved!\n")
+    print("[OK] All outputs saved!\n")
 
 
 if __name__ == "__main__":

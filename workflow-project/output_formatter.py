@@ -80,7 +80,7 @@ class OutputFormatter:
         
         try:
             text_path = os.path.join(output_dir, "report.txt")
-            with open(text_path, 'w') as f:
+            with open(text_path, 'w', encoding="utf-8") as f:
                 f.write(self.generate_text_report())
             print("[OK] Text report saved")
             saved_files.append(text_path)
@@ -89,7 +89,7 @@ class OutputFormatter:
         
         try:
             html_path = os.path.join(output_dir, "report.html")
-            with open(html_path, 'w') as f:
+            with open(html_path, 'w', encoding="utf-8") as f:
                 f.write(self.generate_html_report())
             print("[OK] HTML report saved")
             saved_files.append(html_path)
@@ -98,7 +98,7 @@ class OutputFormatter:
         
         try:
             csv_path = os.path.join(output_dir, "stocks.csv")
-            with open(csv_path, 'w') as f:
+            with open(csv_path, 'w', encoding="utf-8") as f:
                 f.write(self.generate_csv_report())
             print("[OK] CSV report saved")
             saved_files.append(csv_path)
@@ -114,7 +114,7 @@ class OutputFormatter:
                     "insights": info['insights']
                 }
             json_path = os.path.join(output_dir, "data.json")
-            with open(json_path, 'w') as f:
+            with open(json_path, 'w', encoding="utf-8") as f:
                 json.dump(data, f, indent=2)
             print("[OK] JSON data saved")
             saved_files.append(json_path)

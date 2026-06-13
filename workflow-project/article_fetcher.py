@@ -18,6 +18,17 @@ USE_REAL_APIS = os.getenv("USE_REAL_APIS", "false").lower() == "true"
 NEWSAPI_KEY = os.getenv("NEWSAPI_KEY", "")
 NEWSAPI_URL = "https://newsapi.org/v2/everything"
 
+
+def _warn(message: str):
+    """Print ASCII-only warnings so Windows presentation consoles do not crash."""
+    print(f"[WARN] {message}")
+
+
+def _demo_rng(ticker: str, count: int) -> random.Random:
+    """Return a same-day deterministic RNG for stable presentation demos."""
+    today = datetime.now().strftime("%Y-%m-%d")
+    return random.Random(f"{ticker}:{count}:{today}:article-demo")
+
 def get_real_articles(ticker: str, count: int = 3) -> list:
     """
     Fetch real news articles from NewsAPI.
@@ -26,7 +37,7 @@ def get_real_articles(ticker: str, count: int = 3) -> list:
     Free tier: 450 requests per day
     """
     if not NEWSAPI_KEY:
-        print(f"⚠️  NEWSAPI_KEY not set. Falling back to mock data.")
+        _warn("NEWSAPI_KEY not set. Falling back to mock data.")
         return get_mock_articles(ticker, count)
     
     try:
@@ -43,7 +54,7 @@ def get_real_articles(ticker: str, count: int = 3) -> list:
         data = response.json()
         
         if data.get("status") != "ok":
-            print(f"⚠️  NewsAPI Error: {data.get('message', 'Unknown error')}. Using mock data.")
+            _warn(f"NewsAPI Error: {data.get('message', 'Unknown error')}. Using mock data.")
             return get_mock_articles(ticker, count)
         
         articles = []
@@ -63,10 +74,10 @@ def get_real_articles(ticker: str, count: int = 3) -> list:
         return articles if articles else get_mock_articles(ticker, count)
     
     except requests.exceptions.RequestException as e:
-        print(f"⚠️  API request failed: {e}. Using mock data.")
+        _warn(f"API request failed: {e}. Using mock data.")
         return get_mock_articles(ticker, count)
     except (ValueError, KeyError) as e:
-        print(f"⚠️  Could not parse API response: {e}. Using mock data.")
+        _warn(f"Could not parse API response: {e}. Using mock data.")
         return get_mock_articles(ticker, count)
 
 
@@ -103,14 +114,15 @@ def get_mock_articles(ticker: str, count: int = 3) -> list:
         "New technology may disrupt the competitive landscape.",
     ]
     
+    rng = _demo_rng(ticker, count)
     articles = []
     for i in range(count):
-        pub_date = datetime.now() - timedelta(days=random.randint(0, 7))
+        pub_date = datetime.now() - timedelta(days=rng.randint(0, 7))
         articles.append({
-            "title": random.choice(sample_headlines),
-            "description": random.choice(sample_descriptions),
+            "title": rng.choice(sample_headlines),
+            "description": rng.choice(sample_descriptions),
             "published_at": pub_date.strftime("%Y-%m-%d %H:%M:%S"),
-            "source": random.choice(["Bloomberg", "Reuters", "CNBC", "MarketWatch"]),
+            "source": rng.choice(["Bloomberg", "Reuters", "CNBC", "MarketWatch"]),
             "url": f"https://example-news.com/article-{i}"
         })
     

@@ -3,6 +3,13 @@ Visual Workflow Diagram
 Shows the exact flow of the stock analysis workflow.
 """
 
+import sys
+
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
+
 WORKFLOW_DIAGRAM = """
 ╔════════════════════════════════════════════════════════════════════╗
 ║              STOCK ANALYSIS WORKFLOW - VISUAL FLOW                 ║

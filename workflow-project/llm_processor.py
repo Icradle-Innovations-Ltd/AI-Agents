@@ -55,11 +55,23 @@ class MockLLM:
     
     @staticmethod
     def generate_insights(stock_data: dict, articles_text: str, sentiment: dict) -> list:
+        trend = stock_data["trend"]
+        volatility = stock_data["volatility"]
+        sentiment_label = sentiment["overall_sentiment"]
+        trend_article = "an" if trend[:1].lower() in {"a", "e", "i", "o", "u"} else "a"
+
+        if trend == "up" and volatility != "high":
+            risk_note = "Price momentum appears favorable for near-term monitoring"
+        elif volatility == "high":
+            risk_note = "Elevated volatility makes this a watchlist candidate before action"
+        else:
+            risk_note = "The signal is mixed, so the next observation should confirm direction"
+
         return [
-            f"The stock is in an {stock_data['trend']} trend with {stock_data['volatility']} volatility",
-            f"Recent articles show {sentiment['overall_sentiment']} sentiment",
+            f"The stock is in {trend_article} {trend} trend with {volatility} volatility",
+            f"Recent articles show {sentiment_label} sentiment",
             "Market analysts are optimistic about future performance",
-            "Price momentum appears favorable for near-term trading"
+            risk_note,
         ]
 
     @staticmethod
@@ -205,7 +217,7 @@ class LLMProcessor:
         if not self.use_mock:
             api_key = os.getenv("OPENAI_API_KEY")
             if not api_key:
-                print("⚠️  No OPENAI_API_KEY found. Switching to mock mode.")
+                print("[WARN] No OPENAI_API_KEY found. Switching to mock mode.")
                 self.use_mock = True
             else:
                 self.llm = OpenAI(temperature=0.3, max_tokens=500)
@@ -382,4 +394,4 @@ if __name__ == "__main__":
     sample_stock = {"trend": "up", "change_percent": 2.5}
     print("\nINSIGHTS:")
     for insight in processor.generate_insights(sample_stock, sample_articles, {"overall_sentiment": "positive"}):
-        print(f"  • {insight}")
+        print(f"  - {insight}")

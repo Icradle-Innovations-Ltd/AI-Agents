@@ -109,14 +109,6 @@ class StockAnalysisAgent:
                 self._apply_memory_updates(state, plan.get("memory_updates", []))
                 self._execute_plan(state, plan.get("steps", []))
 
-                if plan.get("requery", {}).get("needed"):
-                    print(f"  RE-QUERY: {plan['requery']['reason']}")
-                    self._execute_tool(state, plan["requery"])
-                    self._invalidate_derived_state(state)
-                    state["memory"]["open_questions"].append(plan["requery"]["reason"])
-                    state["requery_count"] += 1
-                    continue
-
                 decision = state["decision"] or {}
                 if plan.get("stop") or (
                     decision and decision.get("confidence", 0) >= self.confidence_threshold and not decision.get("need_more_data")
@@ -124,6 +116,18 @@ class StockAnalysisAgent:
                     state["completed"] = True
                     state["stop_reason"] = "confident_enough"
                     break
+
+                requery = plan.get("requery", {}) or {}
+                if requery.get("needed"):
+                    if state["cycle"] >= self.max_cycles:
+                        state["stop_reason"] = "max_cycles_reached"
+                        break
+                    print(f"  RE-QUERY: {requery['reason']}")
+                    self._execute_tool(state, requery)
+                    self._invalidate_derived_state(state)
+                    state["memory"]["open_questions"].append(requery["reason"])
+                    state["requery_count"] += 1
+                    continue
 
                 state["memory"]["open_questions"].append("Planner requested another pass")
 
@@ -139,6 +143,10 @@ class StockAnalysisAgent:
                         state["summary"] = self.processor.summarize_articles(state["articles_text"])
                     if not state.get("sentiment"):
                         state["sentiment"] = self.processor.analyze_sentiment(state["articles_text"])
+                    if not state.get("insights"):
+                        state["insights"] = self.processor.generate_insights(
+                            state["stock_data"], state["articles_text"], state["sentiment"]
+                        )
 
                     fallback_decision = self.processor.decide_action(
                         state["stock_data"], state["summary"], state["sentiment"], state["articles_text"]
@@ -448,7 +456,7 @@ class StockAnalysisAgent:
 
         self._persist_memory()
 
-        print(f"✓ Agent outputs saved to {output_dir}")
+        print(f"[OK] Agent outputs saved to {output_dir}")
         print(f"  Files: {len(saved_files)} generated")
 
 
@@ -465,7 +473,7 @@ def main():
 
     print("\nSaving agent outputs in multiple formats...")
     agent.save_outputs("./output")
-    print("✓ Agent run complete!\n")
+    print("[OK] Agent run complete!\n")
 
 
 if __name__ == "__main__":

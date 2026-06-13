@@ -4,7 +4,7 @@ Supports both real Alpha Vantage API and mock data.
 Set USE_REAL_APIS=true and ALPHAVANTAGE_API_KEY in .env to use real data.
 """
 
-from datetime import datetime, timedelta
+from datetime import datetime
 import random
 import os
 import time
@@ -18,6 +18,26 @@ USE_REAL_APIS = os.getenv("USE_REAL_APIS", "false").lower() == "true"
 ALPHAVANTAGE_API_KEY = os.getenv("ALPHAVANTAGE_API_KEY", "")
 ALPHAVANTAGE_URL = "https://www.alphavantage.co/query"
 
+MOCK_CHANGE_PROFILES = {
+    "AAPL": 1.66,
+    "MSFT": 0.8,
+    "GOOGL": -1.2,
+    "TSLA": -6.4,
+    "AMZN": 2.4,
+    "NFLX": 5.8,
+}
+
+
+def _warn(message: str):
+    """Print ASCII-only warnings so Windows presentation consoles do not crash."""
+    print(f"[WARN] {message}")
+
+
+def _demo_rng(ticker: str) -> random.Random:
+    """Return a same-day deterministic RNG for stable presentation demos."""
+    today = datetime.now().strftime("%Y-%m-%d")
+    return random.Random(f"{ticker}:{today}:stock-demo")
+
 def get_real_stock_data(ticker: str) -> dict:
     """
     Fetch real stock data from Alpha Vantage API.
@@ -26,7 +46,7 @@ def get_real_stock_data(ticker: str) -> dict:
     Free tier: 5 requests per minute, 500 per day
     """
     if not ALPHAVANTAGE_API_KEY:
-        print(f"⚠️  ALPHAVANTAGE_API_KEY not set. Falling back to mock data.")
+        _warn("ALPHAVANTAGE_API_KEY not set. Falling back to mock data.")
         return get_mock_stock_data(ticker)
     
     try:
@@ -42,11 +62,11 @@ def get_real_stock_data(ticker: str) -> dict:
         data = response.json()
         
         if "Error Message" in data:
-            print(f"⚠️  API Error: {data['Error Message']}. Using mock data.")
+            _warn(f"API Error: {data['Error Message']}. Using mock data.")
             return get_mock_stock_data(ticker)
         
         if "Global Quote" not in data or not data["Global Quote"]:
-            print(f"⚠️  No data for {ticker}. Using mock data.")
+            _warn(f"No data for {ticker}. Using mock data.")
             return get_mock_stock_data(ticker)
         
         quote = data["Global Quote"]
@@ -76,39 +96,33 @@ def get_real_stock_data(ticker: str) -> dict:
         }
     
     except requests.exceptions.RequestException as e:
-        print(f"⚠️  API request failed: {e}. Using mock data.")
+        _warn(f"API request failed: {e}. Using mock data.")
         return get_mock_stock_data(ticker)
     except (ValueError, KeyError) as e:
-        print(f"⚠️  Could not parse API response: {e}. Using mock data.")
+        _warn(f"Could not parse API response: {e}. Using mock data.")
         return get_mock_stock_data(ticker)
 
 
 def get_mock_stock_data(ticker: str) -> dict:
     """
     Simulates stock data for testing without API keys.
-    Generates realistic-looking but random data.
+    Generates realistic-looking deterministic data for stable demos.
     """
-    base_price = random.uniform(100, 500)
-    prices = []
-    dates = []
-    
-    for i in range(5):
-        date = datetime.now() - timedelta(days=i)
-        dates.append(date.strftime("%Y-%m-%d"))
-        price = base_price + random.uniform(-5, 5)
-        prices.append(round(price, 2))
-    
-    trend = "up" if prices[0] > prices[-1] else "down"
-    change = round(((prices[0] - prices[-1]) / prices[-1]) * 100, 2)
+    rng = _demo_rng(ticker)
+    previous_close = round(rng.uniform(100, 500), 2)
+    change_percent = MOCK_CHANGE_PROFILES.get(ticker, round(rng.uniform(-4.0, 4.0), 2))
+    current_price = round(previous_close * (1 + (change_percent / 100)), 2)
+    price_change = round(current_price - previous_close, 2)
+    trend = "up" if change_percent >= 0 else "down"
     
     return {
         "ticker": ticker,
-        "current_price": prices[0],
-        "previous_close": prices[1],
-        "change": round(prices[0] - prices[1], 2),
-        "change_percent": change,
+        "current_price": current_price,
+        "previous_close": previous_close,
+        "change": price_change,
+        "change_percent": change_percent,
         "trend": trend,
-        "volatility": "high" if abs(change) > 5 else "medium" if abs(change) > 2 else "low",
+        "volatility": "high" if abs(change_percent) > 5 else "medium" if abs(change_percent) > 2 else "low",
         "timestamp": datetime.now().strftime("%Y-%m-%d"),
         "data_source": "Mock Data (for testing)"
     }

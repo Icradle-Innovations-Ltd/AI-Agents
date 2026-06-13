@@ -1,57 +1,43 @@
 {
   "version": 1,
-  "started_at": "2026-05-18T18:02:30.526478",
-  "last_run_at": "2026-05-18T18:02:45.781947",
-  "run_count": 10,
+  "started_at": "2026-06-13T09:54:42.239835",
+  "last_run_at": "2026-06-13T09:54:42.318569",
+  "run_count": 16,
   "ticker_memory": {
     "AAPL": {
       "facts": [
-        "Prior lessons considered: 27",
-        "AAPL: re-query recommended because confidence=0.85, decision=0.67, volatility=low",
-        "Prior lessons considered: 27",
-        "Derived analysis cleared after re-query",
-        "AAPL: re-query recommended because confidence=0.00, decision=0.00, volatility=low",
-        "Prior lessons considered: 27",
-        "Derived analysis cleared after re-query"
+        "Prior lessons considered: 43"
       ],
-      "open_questions": [
-        "Planner requested another pass",
-        "The current evidence is not strong enough to stop yet",
-        "The current evidence is not strong enough to stop yet"
-      ],
+      "open_questions": [],
       "signals": [
-        "fetch_articles: [{'title': 'Mac\u306e\u30c7\u30a3\u30b9\u30af\u4f7f\u7528\u91cf\u3084\u7279\u5b9a\u306e\u30d5\u30a1\u30a4\u30eb\u306e\u5360\u6709\u7387\u3092\u53ef\u8996\u5316\u3057\u3066\u304f\u308c\u308b\u30e6\u30fc\u30c6\u30a3\u30ea\u30c6\u30a3\u300cGrandPerspective\u300d\u304c\u65b0\u30a2\u30a4\u30b3\u30f3\u3068Liquid Glass\u306b\u5bfe\u5fdc\u3002', 'description': 'Mac\u306e\u30c7\u30a3\u30b9\u30af\u4f7f\u7528\u91cf\u3084\u7279\u5b9a\u306e\u30d5\u30a1\u30a4\u30eb\u306e\u5360\u6709\u7387\u3092\u53ef\u8996\u5316\u3057\u3066\u304f\u308c\u308b\u30e6\u30fc\u30c6\u30a3\u30ea\u30c6\u30a3\u300cGrandPerspective\u300d\u304c\u65b0\u30a2\u30a4\u30b3\u30f3\u3068Liquid Glass\u306b\u5bfe\u5fdc\u3057\u3066\u3044\u307e\u3059\u3002\u8a73\u7d30\u306f\u4ee5\u4e0b\u304b\u3089\u3002 \\u3000GrandPerspecti [\u2026]\\nThe post Mac\u306e\u30c7\u30a3\u30b9\u30af\u4f7f\u7528\u91cf\u3084\u7279\u5b9a\u306e\u30d5\u30a1\u30a4\u30eb\u306e\u5360\u6709\u7387\u3092\u53ef\u8996\u5316\u3057\u3066\u304f\u308c\u308b\u30e6\u30fc\u30c6\u30a3\u30ea\u30c6\u30a3\u300cGrandPerspective\u300d\u304c\u65b0\u30a2\u30a4\u30b3\u30f3\u3068Liquid Glass\u306b\u5bfe\u5fdc\u3002 first appeared on AAPL Ch..', 'published_at': '2026-05-16T19:36:56Z', 'source': 'Applech2.com', 'url': 'https://applech2.com/archives/20260517-grandperspective-for-mac-support-new-icons-and-liquid-glass.html', 'content': 'MacGrandPerspectiveLiquid Glass\\r\\nGrandPerspectiveErwin Bonsma2005MacGrandPerspective202605153.7.1Liquid Glass\\r\\nMinor improvements:\\r\\n<ul><li>Updated user interface for Liquid Glass</li><li>More gracef\u2026 [+150 chars]'}, {'title': 'MarketBeat Week in Review \u2013 05/11 - 05/15', 'description': 'Stocks were mostly higher this week as investors were reminded that earnings are the signal; inflation and geopolitics is noise', 'published_at': '2026-05-16T11:00:00Z', 'source': 'MarketBeat', 'url': 'https://www.marketbeat.com/originals/marketbeat-week-in-review-05-11-05-15/?utm_source=yahoofinance&amp;utm_medium=yahoofinance', 'content': 'Key Points\\r\\n<ul><li>Interested in Oklo Inc.? Here are five stocks we like better.\\r\\n</li><li>Strong earnings and continued optimism for a resolution to the conflict in Iran kept stocks higher.\\r\\n</li><\u2026 [+8883 chars]'}, {'title': 'Acasis\u3001NVMe SSD\u3092\u6700\u592710\u57fa\u642d\u8f09\u53ef\u80fd\u306aThunderbolt 5\u5bfe\u5fdc\u30a8\u30f3\u30af\u30ed\u30fc\u30b8\u30e3\u30fc\u300cAcasis TB504 Pro\u300d\u306a\u3069\u306e\u8ca9\u58f2\u30ad\u30e3\u30f3\u30da\u30fc\u30f3\u3092Kickstarter\u3067\u958b\u59cb\u3002', 'description': 'Acasis\u304cNVMe SSD\u3092\u6700\u592710\u57fa\u642d\u8f09\u53ef\u80fd\u306aThunderbolt 5\u5bfe\u5fdc\u30a8\u30f3\u30af\u30ed\u30fc\u30b8\u30e3\u30fc\u300cAcasis TB504 Pro\u300d\u306e\u8ca9\u58f2\u30ad\u30e3\u30f3\u30da\u30fc\u30f3\u3092Kickstarter\u3067\u958b\u59cb\u3057\u3066\u3044\u307e\u3059\u3002\u8a73\u7d30\u306f\u4ee5\u4e0b\u304b\u3089\u3002 \\u3000Ma [\u2026]\\nThe post Acasis\u3001NVMe SSD\u3092\u6700\u592710\u57fa\u642d\u8f09\u53ef\u80fd\u306aThunderbolt 5\u5bfe\u5fdc\u30a8\u30f3\u30af\u30ed\u30fc\u30b8\u30e3\u30fc\u300cAcasis TB504 Pro\u300d\u306a\u3069\u306e\u8ca9\u58f2\u30ad\u30e3\u30f3\u30da\u30fc\u30f3\u3092Kickstarter\u3067\u958b\u59cb\u3002 first appeared on AAPL Ch..', 'published_at': '2026-05-15T23:26:16Z', 'source': 'Applech2.com', 'url': 'https://applech2.com/archives/20260516-acasis-tb504-pro-thunderbolt-5.html', 'content': 'AcasisNVMe SSD10Thunderbolt 5Acasis TB504 ProKickstarter\\r\\nMac mini (2024)USB-CNVMe SSDACASIS Mac Mini M4 WorkstationMac miniACASIS Mac mini M2 Dock &amp; StandACASIS20260515\\r\\nUSB-C/Thunderbolt 5NVMe \u2026 [+407 chars]'}]",
+        "fetch_articles: [{'title': 'AAPL Surges After Strong Earnings Report', 'description': 'Major investment firms increased their positions in the stock.', 'published_at': '2026-06-13 09:54:42', 'source': 'CNBC', 'url': 'https://example-news.com/article-0'}, {'title': 'AAPL Expands International Operations', 'description': 'Strategic partnerships could drive future revenue.', 'published_at': '2026-06-08 09:54:42', 'source': 'MarketWatch', 'url': 'https://example-news.com/article-1'}, {'title': 'Insider Trading Activity Detected in AAPL', 'description': 'New technology may disrupt the competitive landscape.', 'published_at': '2026-06-10 09:54:42', 'source': 'CNBC', 'url': 'https://example-news.com/article-2'}]",
         "analyze_sentiment: {'overall_sentiment': 'positive', 'confidence': 0.85}",
-        "decide_action: {'confidence': 0.67, 'recommendation': 'accumulate', 'need_more_data': False}",
-        "fetch_articles: [{'title': 'Mac\u306e\u30c7\u30a3\u30b9\u30af\u4f7f\u7528\u91cf\u3084\u7279\u5b9a\u306e\u30d5\u30a1\u30a4\u30eb\u306e\u5360\u6709\u7387\u3092\u53ef\u8996\u5316\u3057\u3066\u304f\u308c\u308b\u30e6\u30fc\u30c6\u30a3\u30ea\u30c6\u30a3\u300cGrandPerspective\u300d\u304c\u65b0\u30a2\u30a4\u30b3\u30f3\u3068Liquid Glass\u306b\u5bfe\u5fdc\u3002', 'description': 'Mac\u306e\u30c7\u30a3\u30b9\u30af\u4f7f\u7528\u91cf\u3084\u7279\u5b9a\u306e\u30d5\u30a1\u30a4\u30eb\u306e\u5360\u6709\u7387\u3092\u53ef\u8996\u5316\u3057\u3066\u304f\u308c\u308b\u30e6\u30fc\u30c6\u30a3\u30ea\u30c6\u30a3\u300cGrandPerspective\u300d\u304c\u65b0\u30a2\u30a4\u30b3\u30f3\u3068Liquid Glass\u306b\u5bfe\u5fdc\u3057\u3066\u3044\u307e\u3059\u3002\u8a73\u7d30\u306f\u4ee5\u4e0b\u304b\u3089\u3002 \\u3000GrandPerspecti [\u2026]\\nThe post Mac\u306e\u30c7\u30a3\u30b9\u30af\u4f7f\u7528\u91cf\u3084\u7279\u5b9a\u306e\u30d5\u30a1\u30a4\u30eb\u306e\u5360\u6709\u7387\u3092\u53ef\u8996\u5316\u3057\u3066\u304f\u308c\u308b\u30e6\u30fc\u30c6\u30a3\u30ea\u30c6\u30a3\u300cGrandPerspective\u300d\u304c\u65b0\u30a2\u30a4\u30b3\u30f3\u3068Liquid Glass\u306b\u5bfe\u5fdc\u3002 first appeared on AAPL Ch..', 'published_at': '2026-05-16T19:36:56Z', 'source': 'Applech2.com', 'url': 'https://applech2.com/archives/20260517-grandperspective-for-mac-support-new-icons-and-liquid-glass.html', 'content': 'MacGrandPerspectiveLiquid Glass\\r\\nGrandPerspectiveErwin Bonsma2005MacGrandPerspective202605153.7.1Liquid Glass\\r\\nMinor improvements:\\r\\n<ul><li>Updated user interface for Liquid Glass</li><li>More gracef\u2026 [+150 chars]'}, {'title': 'MarketBeat Week in Review \u2013 05/11 - 05/15', 'description': 'Stocks were mostly higher this week as investors were reminded that earnings are the signal; inflation and geopolitics is noise', 'published_at': '2026-05-16T11:00:00Z', 'source': 'MarketBeat', 'url': 'https://www.marketbeat.com/originals/marketbeat-week-in-review-05-11-05-15/?utm_source=yahoofinance&amp;utm_medium=yahoofinance', 'content': 'Key Points\\r\\n<ul><li>Interested in Oklo Inc.? Here are five stocks we like better.\\r\\n</li><li>Strong earnings and continued optimism for a resolution to the conflict in Iran kept stocks higher.\\r\\n</li><\u2026 [+8883 chars]'}, {'title': 'Acasis\u3001NVMe SSD\u3092\u6700\u592710\u57fa\u642d\u8f09\u53ef\u80fd\u306aThunderbolt 5\u5bfe\u5fdc\u30a8\u30f3\u30af\u30ed\u30fc\u30b8\u30e3\u30fc\u300cAcasis TB504 Pro\u300d\u306a\u3069\u306e\u8ca9\u58f2\u30ad\u30e3\u30f3\u30da\u30fc\u30f3\u3092Kickstarter\u3067\u958b\u59cb\u3002', 'description': 'Acasis\u304cNVMe SSD\u3092\u6700\u592710\u57fa\u642d\u8f09\u53ef\u80fd\u306aThunderbolt 5\u5bfe\u5fdc\u30a8\u30f3\u30af\u30ed\u30fc\u30b8\u30e3\u30fc\u300cAcasis TB504 Pro\u300d\u306e\u8ca9\u58f2\u30ad\u30e3\u30f3\u30da\u30fc\u30f3\u3092Kickstarter\u3067\u958b\u59cb\u3057\u3066\u3044\u307e\u3059\u3002\u8a73\u7d30\u306f\u4ee5\u4e0b\u304b\u3089\u3002 \\u3000Ma [\u2026]\\nThe post Acasis\u3001NVMe SSD\u3092\u6700\u592710\u57fa\u642d\u8f09\u53ef\u80fd\u306aThunderbolt 5\u5bfe\u5fdc\u30a8\u30f3\u30af\u30ed\u30fc\u30b8\u30e3\u30fc\u300cAcasis TB504 Pro\u300d\u306a\u3069\u306e\u8ca9\u58f2\u30ad\u30e3\u30f3\u30da\u30fc\u30f3\u3092Kickstarter\u3067\u958b\u59cb\u3002 first appeared on AAPL Ch..', 'published_at': '2026-05-15T23:26:16Z', 'source': 'Applech2.com', 'url': 'https://applech2.com/archives/20260516-acasis-tb504-pro-thunderbolt-5.html', 'content': 'AcasisNVMe SSD10Thunderbolt 5Acasis TB504 ProKickstarter\\r\\nMac mini (2024)USB-CNVMe SSDACASIS Mac Mini M4 WorkstationMac miniACASIS Mac mini M2 Dock &amp; StandACASIS20260515\\r\\nUSB-C/Thunderbolt 5NVMe \u2026 [+407 chars]'}]",
-        "analyze_sentiment: {'overall_sentiment': 'positive', 'confidence': 0.85}",
-        "decide_action: {'confidence': 0.67, 'recommendation': 'accumulate', 'need_more_data': False}",
-        "fetch_articles: [{'title': 'Mac\u306e\u30c7\u30a3\u30b9\u30af\u4f7f\u7528\u91cf\u3084\u7279\u5b9a\u306e\u30d5\u30a1\u30a4\u30eb\u306e\u5360\u6709\u7387\u3092\u53ef\u8996\u5316\u3057\u3066\u304f\u308c\u308b\u30e6\u30fc\u30c6\u30a3\u30ea\u30c6\u30a3\u300cGrandPerspective\u300d\u304c\u65b0\u30a2\u30a4\u30b3\u30f3\u3068Liquid Glass\u306b\u5bfe\u5fdc\u3002', 'description': 'Mac\u306e\u30c7\u30a3\u30b9\u30af\u4f7f\u7528\u91cf\u3084\u7279\u5b9a\u306e\u30d5\u30a1\u30a4\u30eb\u306e\u5360\u6709\u7387\u3092\u53ef\u8996\u5316\u3057\u3066\u304f\u308c\u308b\u30e6\u30fc\u30c6\u30a3\u30ea\u30c6\u30a3\u300cGrandPerspective\u300d\u304c\u65b0\u30a2\u30a4\u30b3\u30f3\u3068Liquid Glass\u306b\u5bfe\u5fdc\u3057\u3066\u3044\u307e\u3059\u3002\u8a73\u7d30\u306f\u4ee5\u4e0b\u304b\u3089\u3002 \\u3000GrandPerspecti [\u2026]\\nThe post Mac\u306e\u30c7\u30a3\u30b9\u30af\u4f7f\u7528\u91cf\u3084\u7279\u5b9a\u306e\u30d5\u30a1\u30a4\u30eb\u306e\u5360\u6709\u7387\u3092\u53ef\u8996\u5316\u3057\u3066\u304f\u308c\u308b\u30e6\u30fc\u30c6\u30a3\u30ea\u30c6\u30a3\u300cGrandPerspective\u300d\u304c\u65b0\u30a2\u30a4\u30b3\u30f3\u3068Liquid Glass\u306b\u5bfe\u5fdc\u3002 first appeared on AAPL Ch..', 'published_at': '2026-05-16T19:36:56Z', 'source': 'Applech2.com', 'url': 'https://applech2.com/archives/20260517-grandperspective-for-mac-support-new-icons-and-liquid-glass.html', 'content': 'MacGrandPerspectiveLiquid Glass\\r\\nGrandPerspectiveErwin Bonsma2005MacGrandPerspective202605153.7.1Liquid Glass\\r\\nMinor improvements:\\r\\n<ul><li>Updated user interface for Liquid Glass</li><li>More gracef\u2026 [+150 chars]'}, {'title': 'MarketBeat Week in Review \u2013 05/11 - 05/15', 'description': 'Stocks were mostly higher this week as investors were reminded that earnings are the signal; inflation and geopolitics is noise', 'published_at': '2026-05-16T11:00:00Z', 'source': 'MarketBeat', 'url': 'https://www.marketbeat.com/originals/marketbeat-week-in-review-05-11-05-15/?utm_source=yahoofinance&amp;utm_medium=yahoofinance', 'content': 'Key Points\\r\\n<ul><li>Interested in Oklo Inc.? Here are five stocks we like better.\\r\\n</li><li>Strong earnings and continued optimism for a resolution to the conflict in Iran kept stocks higher.\\r\\n</li><\u2026 [+8883 chars]'}, {'title': 'Acasis\u3001NVMe SSD\u3092\u6700\u592710\u57fa\u642d\u8f09\u53ef\u80fd\u306aThunderbolt 5\u5bfe\u5fdc\u30a8\u30f3\u30af\u30ed\u30fc\u30b8\u30e3\u30fc\u300cAcasis TB504 Pro\u300d\u306a\u3069\u306e\u8ca9\u58f2\u30ad\u30e3\u30f3\u30da\u30fc\u30f3\u3092Kickstarter\u3067\u958b\u59cb\u3002', 'description': 'Acasis\u304cNVMe SSD\u3092\u6700\u592710\u57fa\u642d\u8f09\u53ef\u80fd\u306aThunderbolt 5\u5bfe\u5fdc\u30a8\u30f3\u30af\u30ed\u30fc\u30b8\u30e3\u30fc\u300cAcasis TB504 Pro\u300d\u306e\u8ca9\u58f2\u30ad\u30e3\u30f3\u30da\u30fc\u30f3\u3092Kickstarter\u3067\u958b\u59cb\u3057\u3066\u3044\u307e\u3059\u3002\u8a73\u7d30\u306f\u4ee5\u4e0b\u304b\u3089\u3002 \\u3000Ma [\u2026]\\nThe post Acasis\u3001NVMe SSD\u3092\u6700\u592710\u57fa\u642d\u8f09\u53ef\u80fd\u306aThunderbolt 5\u5bfe\u5fdc\u30a8\u30f3\u30af\u30ed\u30fc\u30b8\u30e3\u30fc\u300cAcasis TB504 Pro\u300d\u306a\u3069\u306e\u8ca9\u58f2\u30ad\u30e3\u30f3\u30da\u30fc\u30f3\u3092Kickstarter\u3067\u958b\u59cb\u3002 first appeared on AAPL Ch..', 'published_at': '2026-05-15T23:26:16Z', 'source': 'Applech2.com', 'url': 'https://applech2.com/archives/20260516-acasis-tb504-pro-thunderbolt-5.html', 'content': 'AcasisNVMe SSD10Thunderbolt 5Acasis TB504 ProKickstarter\\r\\nMac mini (2024)USB-CNVMe SSDACASIS Mac Mini M4 WorkstationMac miniACASIS Mac mini M2 Dock &amp; StandACASIS20260515\\r\\nUSB-C/Thunderbolt 5NVMe \u2026 [+407 chars]'}]"
+        "decide_action: {'confidence': 0.91, 'recommendation': 'buy', 'need_more_data': False}"
       ],
       "recent_lessons": [
-        "MSFT: UNDECIDED with confidence 0 after 3 cycle(s); sentiment=unknown",
-        "GOOGL: UNDECIDED with confidence 0 after 3 cycle(s); sentiment=unknown",
-        "AAPL: UNDECIDED with confidence 0 after 3 cycle(s); sentiment=unknown",
         "MSFT: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive",
-        "GOOGL: UNDECIDED with confidence 0 after 3 cycle(s); sentiment=unknown"
+        "TSLA: WATCH with confidence 0.43 after 3 cycle(s); sentiment=positive",
+        "AAPL: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive",
+        "MSFT: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive",
+        "TSLA: WATCH with confidence 0.43 after 3 cycle(s); sentiment=positive"
       ]
     },
     "MSFT": {
       "facts": [
-        "Prior lessons considered: 28"
+        "Prior lessons considered: 44"
       ],
       "open_questions": [],
       "signals": [
-        "fetch_articles: [{'title': \"Elon Musk wants SpaceX to go public. Here's how it works\", 'description': 'Companies like SpaceX and OpenAI are eyeing stock market debuts, potentially in 2026. Going public involves choosing an exchange, filing detailed financial documents with the SEC, pitching to investors, and crucially, setting a share price. This complex proce\u2026', 'published_at': '2026-05-17T10:37:38Z', 'source': 'The Times of India', 'url': 'https://economictimes.indiatimes.com/tech/technology/elon-musk-wants-spacex-to-go-public-heres-how-it-works/articleshow/131152395.cms', 'content': 'Hundreds of companies raised a combined $70 billion by selling shares to the public in the United States last year.But 2026 could shatter records, with rocket and AI company SpaceX, ChatGPT-maker Ope\u2026 [+3301 chars]'}, {'title': 'player-coach-core added to PyPI', 'description': 'Adversarial quality loop for trading decisions', 'published_at': '2026-05-16T22:12:41Z', 'source': 'Pypi.org', 'url': 'https://pypi.org/project/player-coach-core/', 'content': \"An adversarial quality loop for trading decisions.\\r\\nA CoachAgent challenges and refines a PlayerAgent's proposals\\r\\nbefore execution. Every proposal, rejection, revision, and\\r\\napproval is recorded as \u2026 [+4685 chars]\"}, {'title': 'Microsoft\u2019s (MSFT) African Data Center Struggles with Payment Requests, Bloomberg News Reports', 'description': None, 'published_at': '2026-05-16T14:07:23Z', 'source': 'Yahoo Entertainment', 'url': 'https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_411cae05-3fd9-4c2d-8a8d-e1f647bf676c', 'content': \"If you click 'Accept all', we and our partners, including 247 who are part of the IAB Transparency &amp; Consent Framework, will also store and / or access information on a device (in other words, us\u2026 [+1046 chars]\"}]",
+        "fetch_articles: [{'title': 'Regulatory Challenges Could Impact MSFT', 'description': 'Market volatility impacts valuations across the sector.', 'published_at': '2026-06-08 09:54:42', 'source': 'CNBC', 'url': 'https://example-news.com/article-0'}, {'title': 'Insider Trading Activity Detected in MSFT', 'description': 'Market volatility impacts valuations across the sector.', 'published_at': '2026-06-13 09:54:42', 'source': 'MarketWatch', 'url': 'https://example-news.com/article-1'}, {'title': 'MSFT Launches New Product Line', 'description': 'Company announced record-breaking quarterly earnings with strong growth projections.', 'published_at': '2026-06-07 09:54:42', 'source': 'Bloomberg', 'url': 'https://example-news.com/article-2'}]",
         "analyze_sentiment: {'overall_sentiment': 'positive', 'confidence': 0.85}",
-        "decide_action: {'confidence': 0.79, 'recommendation': 'buy', 'need_more_data': False}"
+        "decide_action: {'confidence': 0.91, 'recommendation': 'buy', 'need_more_data': False}"
       ],
       "recent_lessons": [
-        "GOOGL: UNDECIDED with confidence 0 after 3 cycle(s); sentiment=unknown",
-        "AAPL: UNDECIDED with confidence 0 after 3 cycle(s); sentiment=unknown",
+        "TSLA: WATCH with confidence 0.43 after 3 cycle(s); sentiment=positive",
+        "AAPL: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive",
         "MSFT: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive",
-        "GOOGL: UNDECIDED with confidence 0 after 3 cycle(s); sentiment=unknown",
-        "AAPL: UNDECIDED with confidence 0 after 3 cycle(s); sentiment=unknown"
+        "TSLA: WATCH with confidence 0.43 after 3 cycle(s); sentiment=positive",
+        "AAPL: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive"
       ]
     },
     "GOOGL": {
@@ -88,34 +74,31 @@
     },
     "TSLA": {
       "facts": [
-        "Prior lessons considered: 12",
-        "TSLA: re-query recommended because confidence=0.85, decision=0.67, volatility=low",
-        "Prior lessons considered: 12",
+        "Prior lessons considered: 45",
+        "TSLA: re-query recommended because confidence=0.85, decision=0.43, volatility=high",
+        "Prior lessons considered: 45",
         "Derived analysis cleared after re-query",
-        "TSLA: re-query recommended because confidence=0.00, decision=0.00, volatility=low",
-        "Prior lessons considered: 12",
-        "Derived analysis cleared after re-query"
+        "TSLA: re-query recommended because confidence=0.00, decision=0.00, volatility=high",
+        "Prior lessons considered: 45"
       ],
       "open_questions": [
         "Planner requested another pass",
-        "The current evidence is not strong enough to stop yet",
         "The current evidence is not strong enough to stop yet"
       ],
       "signals": [
-        "fetch_articles: [{'title': 'Cathie Wood sells $40.6 million of popular semiconductor stock', 'description': 'Cathie Wood, chief of Ark Investment Management, is known for actively trading her holdings, sometimes selling stocks during sharp market pullbacks...', 'published_at': '2026-05-16T23:23:51Z', 'source': 'TheStreet', 'url': 'https://www.thestreet.com/investing/stocks/cathie-wood-sells-40-6-million-of-taiwan-semiconductor-stock-tsmc-tsm', 'content': 'Cathie Wood, chief of Ark Investment Management, is known for actively trading her holdings, sometimes selling stocks during sharp market pullbacks.\\r\\nSemiconductor stocks experienced a major market p\u2026 [+6666 chars]'}, {'title': 'player-coach-core added to PyPI', 'description': 'Adversarial quality loop for trading decisions', 'published_at': '2026-05-16T22:12:41Z', 'source': 'Pypi.org', 'url': 'https://pypi.org/project/player-coach-core/', 'content': \"An adversarial quality loop for trading decisions.\\r\\nA CoachAgent challenges and refines a PlayerAgent's proposals\\r\\nbefore execution. Every proposal, rejection, revision, and\\r\\napproval is recorded as \u2026 [+4685 chars]\"}, {'title': 'Tesla (TSLA) raises Model Y prices by up to $1,000 \u2014 first increase in two years', 'description': 'Tesla has increased Model Y prices in the US by up to $1,000 across its Premium and Performance trims. It marks the first price increase on the Model Y in two years.\\n\\n\\n\\nThe move ends a prolonged period of aggressive price cuts that defined Tesla\u2019s strategy th\u2026', 'published_at': '2026-05-16T16:02:39Z', 'source': 'Electrek', 'url': 'http://electrek.co/2026/05/16/tesla-tsla-raises-model-y-prices-first-time-two-years/', 'content': 'Tesla has increased Model Y prices in the US by up to $1,000 across its Premium and Performance trims. It marks the first price increase on the Model Y in two years.\\r\\nThe move ends a prolonged period\u2026 [+3026 chars]'}]",
+        "fetch_articles: [{'title': 'TSLA Expands International Operations', 'description': 'New technology may disrupt the competitive landscape.', 'published_at': '2026-06-09 09:54:42', 'source': 'Bloomberg', 'url': 'https://example-news.com/article-0'}, {'title': 'TSLA Launches New Product Line', 'description': 'Strategic partnerships could drive future revenue.', 'published_at': '2026-06-06 09:54:42', 'source': 'MarketWatch', 'url': 'https://example-news.com/article-1'}, {'title': 'Market Rally Benefits TSLA Stock', 'description': 'Company announced record-breaking quarterly earnings with strong growth projections.', 'published_at': '2026-06-07 09:54:42', 'source': 'Reuters', 'url': 'https://example-news.com/article-2'}]",
         "analyze_sentiment: {'overall_sentiment': 'positive', 'confidence': 0.85}",
-        "decide_action: {'confidence': 0.67, 'recommendation': 'accumulate', 'need_more_data': False}",
-        "fetch_articles: [{'title': 'Cathie Wood sells $40.6 million of popular semiconductor stock', 'description': 'Cathie Wood, chief of Ark Investment Management, is known for actively trading her holdings, sometimes selling stocks during sharp market pullbacks...', 'published_at': '2026-05-16T23:23:51Z', 'source': 'TheStreet', 'url': 'https://www.thestreet.com/investing/stocks/cathie-wood-sells-40-6-million-of-taiwan-semiconductor-stock-tsmc-tsm', 'content': 'Cathie Wood, chief of Ark Investment Management, is known for actively trading her holdings, sometimes selling stocks during sharp market pullbacks.\\r\\nSemiconductor stocks experienced a major market p\u2026 [+6666 chars]'}, {'title': 'player-coach-core added to PyPI', 'description': 'Adversarial quality loop for trading decisions', 'published_at': '2026-05-16T22:12:41Z', 'source': 'Pypi.org', 'url': 'https://pypi.org/project/player-coach-core/', 'content': \"An adversarial quality loop for trading decisions.\\r\\nA CoachAgent challenges and refines a PlayerAgent's proposals\\r\\nbefore execution. Every proposal, rejection, revision, and\\r\\napproval is recorded as \u2026 [+4685 chars]\"}, {'title': 'Tesla (TSLA) raises Model Y prices by up to $1,000 \u2014 first increase in two years', 'description': 'Tesla has increased Model Y prices in the US by up to $1,000 across its Premium and Performance trims. It marks the first price increase on the Model Y in two years.\\n\\n\\n\\nThe move ends a prolonged period of aggressive price cuts that defined Tesla\u2019s strategy th\u2026', 'published_at': '2026-05-16T16:02:39Z', 'source': 'Electrek', 'url': 'http://electrek.co/2026/05/16/tesla-tsla-raises-model-y-prices-first-time-two-years/', 'content': 'Tesla has increased Model Y prices in the US by up to $1,000 across its Premium and Performance trims. It marks the first price increase on the Model Y in two years.\\r\\nThe move ends a prolonged period\u2026 [+3026 chars]'}]",
+        "decide_action: {'confidence': 0.43, 'recommendation': 'watch', 'need_more_data': True}",
+        "fetch_articles: [{'title': 'Insider Trading Activity Detected in TSLA', 'description': 'Market volatility impacts valuations across the sector.', 'published_at': '2026-06-07 09:54:42', 'source': 'Bloomberg', 'url': 'https://example-news.com/article-0'}, {'title': 'Insider Trading Activity Detected in TSLA', 'description': 'Market volatility impacts valuations across the sector.', 'published_at': '2026-06-11 09:54:42', 'source': 'CNBC', 'url': 'https://example-news.com/article-1'}, {'title': 'Market Rally Benefits TSLA Stock', 'description': 'Strategic partnerships could drive future revenue.', 'published_at': '2026-06-13 09:54:42', 'source': 'Reuters', 'url': 'https://example-news.com/article-2'}]",
         "analyze_sentiment: {'overall_sentiment': 'positive', 'confidence': 0.85}",
-        "decide_action: {'confidence': 0.67, 'recommendation': 'accumulate', 'need_more_data': False}",
-        "fetch_articles: [{'title': 'Cathie Wood sells $40.6 million of popular semiconductor stock', 'description': 'Cathie Wood, chief of Ark Investment Management, is known for actively trading her holdings, sometimes selling stocks during sharp market pullbacks...', 'published_at': '2026-05-16T23:23:51Z', 'source': 'TheStreet', 'url': 'https://www.thestreet.com/investing/stocks/cathie-wood-sells-40-6-million-of-taiwan-semiconductor-stock-tsmc-tsm', 'content': 'Cathie Wood, chief of Ark Investment Management, is known for actively trading her holdings, sometimes selling stocks during sharp market pullbacks.\\r\\nSemiconductor stocks experienced a major market p\u2026 [+6666 chars]'}, {'title': 'player-coach-core added to PyPI', 'description': 'Adversarial quality loop for trading decisions', 'published_at': '2026-05-16T22:12:41Z', 'source': 'Pypi.org', 'url': 'https://pypi.org/project/player-coach-core/', 'content': \"An adversarial quality loop for trading decisions.\\r\\nA CoachAgent challenges and refines a PlayerAgent's proposals\\r\\nbefore execution. Every proposal, rejection, revision, and\\r\\napproval is recorded as \u2026 [+4685 chars]\"}, {'title': 'Tesla (TSLA) raises Model Y prices by up to $1,000 \u2014 first increase in two years', 'description': 'Tesla has increased Model Y prices in the US by up to $1,000 across its Premium and Performance trims. It marks the first price increase on the Model Y in two years.\\n\\n\\n\\nThe move ends a prolonged period of aggressive price cuts that defined Tesla\u2019s strategy th\u2026', 'published_at': '2026-05-16T16:02:39Z', 'source': 'Electrek', 'url': 'http://electrek.co/2026/05/16/tesla-tsla-raises-model-y-prices-first-time-two-years/', 'content': 'Tesla has increased Model Y prices in the US by up to $1,000 across its Premium and Performance trims. It marks the first price increase on the Model Y in two years.\\r\\nThe move ends a prolonged period\u2026 [+3026 chars]'}]"
+        "decide_action: {'confidence': 0.43, 'recommendation': 'watch', 'need_more_data': True}"
       ],
       "recent_lessons": [
-        "AMZN: UNDECIDED with confidence 0 after 3 cycle(s); sentiment=unknown",
-        "NFLX: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive",
         "AAPL: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive",
-        "MSFT: BUY with confidence 0.79 after 1 cycle(s); sentiment=positive",
-        "GOOGL: UNDECIDED with confidence 0 after 3 cycle(s); sentiment=unknown"
+        "MSFT: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive",
+        "TSLA: WATCH with confidence 0.43 after 3 cycle(s); sentiment=positive",
+        "AAPL: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive",
+        "MSFT: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive"
       ]
     },
     "AMZN": {
@@ -185,7 +168,23 @@
     "GOOGL: UNDECIDED with confidence 0 after 3 cycle(s); sentiment=unknown",
     "AAPL: UNDECIDED with confidence 0 after 3 cycle(s); sentiment=unknown",
     "MSFT: BUY with confidence 0.79 after 1 cycle(s); sentiment=positive",
-    "GOOGL: UNDECIDED with confidence 0 after 3 cycle(s); sentiment=unknown"
+    "GOOGL: UNDECIDED with confidence 0 after 3 cycle(s); sentiment=unknown",
+    "AAPL: ACCUMULATE with confidence 0.67 after 3 cycle(s); sentiment=positive",
+    "MSFT: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive",
+    "AAPL: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive",
+    "MSFT: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive",
+    "AAPL: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive",
+    "MSFT: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive",
+    "TSLA: WATCH with confidence 0.43 after 3 cycle(s); sentiment=positive",
+    "AAPL: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive",
+    "MSFT: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive",
+    "TSLA: WATCH with confidence 0.43 after 3 cycle(s); sentiment=positive",
+    "AAPL: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive",
+    "MSFT: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive",
+    "TSLA: WATCH with confidence 0.43 after 3 cycle(s); sentiment=positive",
+    "AAPL: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive",
+    "MSFT: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive",
+    "TSLA: WATCH with confidence 0.43 after 3 cycle(s); sentiment=positive"
   ],
   "plan_log": [
     {
@@ -3529,6 +3528,1475 @@
         ]
       },
       "timestamp": "2026-05-18T18:02:44.271388"
+    },
+    {
+      "ticker": "AAPL",
+      "cycle": 1,
+      "plan": {
+        "objective": "Build an evidence-based recommendation for AAPL",
+        "state_summary": {
+          "article_count": 0,
+          "summary_ready": false,
+          "sentiment_confidence": 0.0,
+          "decision_confidence": 0.0,
+          "volatility": "low"
+        },
+        "steps": [
+          {
+            "tool": "fetch_articles",
+            "arguments": {
+              "count": 3
+            },
+            "reason": "Bootstrap the analysis with current articles"
+          },
+          {
+            "tool": "format_articles",
+            "arguments": {},
+            "reason": "Prepare articles for the LLM"
+          },
+          {
+            "tool": "summarize_articles",
+            "arguments": {},
+            "reason": "Condense the evidence"
+          },
+          {
+            "tool": "analyze_sentiment",
+            "arguments": {},
+            "reason": "Score the tone of the articles"
+          },
+          {
+            "tool": "generate_insights",
+            "arguments": {},
+            "reason": "Convert evidence into trade ideas"
+          },
+          {
+            "tool": "decide_action",
+            "arguments": {},
+            "reason": "Choose the final action"
+          }
+        ],
+        "requery": {
+          "needed": false,
+          "tool": "fetch_articles",
+          "arguments": {},
+          "reason": ""
+        },
+        "stop": false,
+        "memory_updates": [
+          "Prior lessons considered: 30"
+        ],
+        "reasoning": [
+          "Trend is down",
+          "Sentiment confidence is 0.00",
+          "Decision confidence is 0.00"
+        ]
+      },
+      "timestamp": "2026-06-13T09:31:16.543292"
+    },
+    {
+      "ticker": "AAPL",
+      "cycle": 2,
+      "plan": {
+        "objective": "Build an evidence-based recommendation for AAPL",
+        "state_summary": {
+          "article_count": 3,
+          "summary_ready": true,
+          "sentiment_confidence": 0.85,
+          "decision_confidence": 0.67,
+          "volatility": "low"
+        },
+        "steps": [],
+        "requery": {
+          "needed": true,
+          "tool": "fetch_articles",
+          "arguments": {
+            "count": 5
+          },
+          "reason": "The current evidence is not strong enough to stop yet"
+        },
+        "stop": false,
+        "memory_updates": [
+          "AAPL: re-query recommended because confidence=0.85, decision=0.67, volatility=low",
+          "Prior lessons considered: 30"
+        ],
+        "reasoning": [
+          "Trend is down",
+          "Sentiment confidence is 0.85",
+          "Decision confidence is 0.67"
+        ]
+      },
+      "timestamp": "2026-06-13T09:31:18.986010"
+    },
+    {
+      "ticker": "AAPL",
+      "cycle": 3,
+      "plan": {
+        "objective": "Build an evidence-based recommendation for AAPL",
+        "state_summary": {
+          "article_count": 5,
+          "summary_ready": false,
+          "sentiment_confidence": 0.0,
+          "decision_confidence": 0.0,
+          "volatility": "low"
+        },
+        "steps": [
+          {
+            "tool": "summarize_articles",
+            "arguments": {},
+            "reason": "A summary is still missing"
+          },
+          {
+            "tool": "analyze_sentiment",
+            "arguments": {},
+            "reason": "Sentiment has not been computed yet"
+          },
+          {
+            "tool": "generate_insights",
+            "arguments": {},
+            "reason": "Need actionable observations"
+          },
+          {
+            "tool": "decide_action",
+            "arguments": {},
+            "reason": "Need a recommendation before stopping"
+          }
+        ],
+        "requery": {
+          "needed": true,
+          "tool": "fetch_articles",
+          "arguments": {
+            "count": 5
+          },
+          "reason": "The current evidence is not strong enough to stop yet"
+        },
+        "stop": false,
+        "memory_updates": [
+          "AAPL: re-query recommended because confidence=0.00, decision=0.00, volatility=low",
+          "Prior lessons considered: 30"
+        ],
+        "reasoning": [
+          "Trend is down",
+          "Sentiment confidence is 0.00",
+          "Decision confidence is 0.00"
+        ]
+      },
+      "timestamp": "2026-06-13T09:31:20.518328"
+    },
+    {
+      "ticker": "MSFT",
+      "cycle": 1,
+      "plan": {
+        "objective": "Build an evidence-based recommendation for MSFT",
+        "state_summary": {
+          "article_count": 0,
+          "summary_ready": false,
+          "sentiment_confidence": 0.0,
+          "decision_confidence": 0.0,
+          "volatility": "low"
+        },
+        "steps": [
+          {
+            "tool": "fetch_articles",
+            "arguments": {
+              "count": 3
+            },
+            "reason": "Bootstrap the analysis with current articles"
+          },
+          {
+            "tool": "format_articles",
+            "arguments": {},
+            "reason": "Prepare articles for the LLM"
+          },
+          {
+            "tool": "summarize_articles",
+            "arguments": {},
+            "reason": "Condense the evidence"
+          },
+          {
+            "tool": "analyze_sentiment",
+            "arguments": {},
+            "reason": "Score the tone of the articles"
+          },
+          {
+            "tool": "generate_insights",
+            "arguments": {},
+            "reason": "Convert evidence into trade ideas"
+          },
+          {
+            "tool": "decide_action",
+            "arguments": {},
+            "reason": "Choose the final action"
+          }
+        ],
+        "requery": {
+          "needed": false,
+          "tool": "fetch_articles",
+          "arguments": {},
+          "reason": ""
+        },
+        "stop": false,
+        "memory_updates": [
+          "Prior lessons considered: 31"
+        ],
+        "reasoning": [
+          "Trend is up",
+          "Sentiment confidence is 0.00",
+          "Decision confidence is 0.00"
+        ]
+      },
+      "timestamp": "2026-06-13T09:31:21.919317"
+    },
+    {
+      "ticker": "AAPL",
+      "cycle": 1,
+      "plan": {
+        "objective": "Build an evidence-based recommendation for AAPL",
+        "state_summary": {
+          "article_count": 0,
+          "summary_ready": false,
+          "sentiment_confidence": 0.0,
+          "decision_confidence": 0.0,
+          "volatility": "low"
+        },
+        "steps": [
+          {
+            "tool": "fetch_articles",
+            "arguments": {
+              "count": 3
+            },
+            "reason": "Bootstrap the analysis with current articles"
+          },
+          {
+            "tool": "format_articles",
+            "arguments": {},
+            "reason": "Prepare articles for the LLM"
+          },
+          {
+            "tool": "summarize_articles",
+            "arguments": {},
+            "reason": "Condense the evidence"
+          },
+          {
+            "tool": "analyze_sentiment",
+            "arguments": {},
+            "reason": "Score the tone of the articles"
+          },
+          {
+            "tool": "generate_insights",
+            "arguments": {},
+            "reason": "Convert evidence into trade ideas"
+          },
+          {
+            "tool": "decide_action",
+            "arguments": {},
+            "reason": "Choose the final action"
+          }
+        ],
+        "requery": {
+          "needed": false,
+          "tool": "fetch_articles",
+          "arguments": {},
+          "reason": ""
+        },
+        "stop": false,
+        "memory_updates": [
+          "Prior lessons considered: 32"
+        ],
+        "reasoning": [
+          "Trend is up",
+          "Sentiment confidence is 0.00",
+          "Decision confidence is 0.00"
+        ]
+      },
+      "timestamp": "2026-06-13T09:38:30.812691"
+    },
+    {
+      "ticker": "MSFT",
+      "cycle": 1,
+      "plan": {
+        "objective": "Build an evidence-based recommendation for MSFT",
+        "state_summary": {
+          "article_count": 0,
+          "summary_ready": false,
+          "sentiment_confidence": 0.0,
+          "decision_confidence": 0.0,
+          "volatility": "low"
+        },
+        "steps": [
+          {
+            "tool": "fetch_articles",
+            "arguments": {
+              "count": 3
+            },
+            "reason": "Bootstrap the analysis with current articles"
+          },
+          {
+            "tool": "format_articles",
+            "arguments": {},
+            "reason": "Prepare articles for the LLM"
+          },
+          {
+            "tool": "summarize_articles",
+            "arguments": {},
+            "reason": "Condense the evidence"
+          },
+          {
+            "tool": "analyze_sentiment",
+            "arguments": {},
+            "reason": "Score the tone of the articles"
+          },
+          {
+            "tool": "generate_insights",
+            "arguments": {},
+            "reason": "Convert evidence into trade ideas"
+          },
+          {
+            "tool": "decide_action",
+            "arguments": {},
+            "reason": "Choose the final action"
+          }
+        ],
+        "requery": {
+          "needed": false,
+          "tool": "fetch_articles",
+          "arguments": {},
+          "reason": ""
+        },
+        "stop": false,
+        "memory_updates": [
+          "Prior lessons considered: 33"
+        ],
+        "reasoning": [
+          "Trend is up",
+          "Sentiment confidence is 0.00",
+          "Decision confidence is 0.00"
+        ]
+      },
+      "timestamp": "2026-06-13T09:38:30.813289"
+    },
+    {
+      "ticker": "AAPL",
+      "cycle": 1,
+      "plan": {
+        "objective": "Build an evidence-based recommendation for AAPL",
+        "state_summary": {
+          "article_count": 0,
+          "summary_ready": false,
+          "sentiment_confidence": 0.0,
+          "decision_confidence": 0.0,
+          "volatility": "low"
+        },
+        "steps": [
+          {
+            "tool": "fetch_articles",
+            "arguments": {
+              "count": 3
+            },
+            "reason": "Bootstrap the analysis with current articles"
+          },
+          {
+            "tool": "format_articles",
+            "arguments": {},
+            "reason": "Prepare articles for the LLM"
+          },
+          {
+            "tool": "summarize_articles",
+            "arguments": {},
+            "reason": "Condense the evidence"
+          },
+          {
+            "tool": "analyze_sentiment",
+            "arguments": {},
+            "reason": "Score the tone of the articles"
+          },
+          {
+            "tool": "generate_insights",
+            "arguments": {},
+            "reason": "Convert evidence into trade ideas"
+          },
+          {
+            "tool": "decide_action",
+            "arguments": {},
+            "reason": "Choose the final action"
+          }
+        ],
+        "requery": {
+          "needed": false,
+          "tool": "fetch_articles",
+          "arguments": {},
+          "reason": ""
+        },
+        "stop": false,
+        "memory_updates": [
+          "Prior lessons considered: 34"
+        ],
+        "reasoning": [
+          "Trend is up",
+          "Sentiment confidence is 0.00",
+          "Decision confidence is 0.00"
+        ]
+      },
+      "timestamp": "2026-06-13T09:41:34.112549"
+    },
+    {
+      "ticker": "MSFT",
+      "cycle": 1,
+      "plan": {
+        "objective": "Build an evidence-based recommendation for MSFT",
+        "state_summary": {
+          "article_count": 0,
+          "summary_ready": false,
+          "sentiment_confidence": 0.0,
+          "decision_confidence": 0.0,
+          "volatility": "low"
+        },
+        "steps": [
+          {
+            "tool": "fetch_articles",
+            "arguments": {
+              "count": 3
+            },
+            "reason": "Bootstrap the analysis with current articles"
+          },
+          {
+            "tool": "format_articles",
+            "arguments": {},
+            "reason": "Prepare articles for the LLM"
+          },
+          {
+            "tool": "summarize_articles",
+            "arguments": {},
+            "reason": "Condense the evidence"
+          },
+          {
+            "tool": "analyze_sentiment",
+            "arguments": {},
+            "reason": "Score the tone of the articles"
+          },
+          {
+            "tool": "generate_insights",
+            "arguments": {},
+            "reason": "Convert evidence into trade ideas"
+          },
+          {
+            "tool": "decide_action",
+            "arguments": {},
+            "reason": "Choose the final action"
+          }
+        ],
+        "requery": {
+          "needed": false,
+          "tool": "fetch_articles",
+          "arguments": {},
+          "reason": ""
+        },
+        "stop": false,
+        "memory_updates": [
+          "Prior lessons considered: 35"
+        ],
+        "reasoning": [
+          "Trend is up",
+          "Sentiment confidence is 0.00",
+          "Decision confidence is 0.00"
+        ]
+      },
+      "timestamp": "2026-06-13T09:41:34.113627"
+    },
+    {
+      "ticker": "TSLA",
+      "cycle": 1,
+      "plan": {
+        "objective": "Build an evidence-based recommendation for TSLA",
+        "state_summary": {
+          "article_count": 0,
+          "summary_ready": false,
+          "sentiment_confidence": 0.0,
+          "decision_confidence": 0.0,
+          "volatility": "high"
+        },
+        "steps": [
+          {
+            "tool": "fetch_articles",
+            "arguments": {
+              "count": 3
+            },
+            "reason": "Bootstrap the analysis with current articles"
+          },
+          {
+            "tool": "format_articles",
+            "arguments": {},
+            "reason": "Prepare articles for the LLM"
+          },
+          {
+            "tool": "summarize_articles",
+            "arguments": {},
+            "reason": "Condense the evidence"
+          },
+          {
+            "tool": "analyze_sentiment",
+            "arguments": {},
+            "reason": "Score the tone of the articles"
+          },
+          {
+            "tool": "generate_insights",
+            "arguments": {},
+            "reason": "Convert evidence into trade ideas"
+          },
+          {
+            "tool": "decide_action",
+            "arguments": {},
+            "reason": "Choose the final action"
+          }
+        ],
+        "requery": {
+          "needed": false,
+          "tool": "fetch_articles",
+          "arguments": {},
+          "reason": ""
+        },
+        "stop": false,
+        "memory_updates": [
+          "Prior lessons considered: 36"
+        ],
+        "reasoning": [
+          "Trend is down",
+          "Sentiment confidence is 0.00",
+          "Decision confidence is 0.00"
+        ]
+      },
+      "timestamp": "2026-06-13T09:41:34.114015"
+    },
+    {
+      "ticker": "TSLA",
+      "cycle": 2,
+      "plan": {
+        "objective": "Build an evidence-based recommendation for TSLA",
+        "state_summary": {
+          "article_count": 3,
+          "summary_ready": true,
+          "sentiment_confidence": 0.85,
+          "decision_confidence": 0.43,
+          "volatility": "high"
+        },
+        "steps": [],
+        "requery": {
+          "needed": true,
+          "tool": "fetch_articles",
+          "arguments": {
+            "count": 5
+          },
+          "reason": "The current evidence is not strong enough to stop yet"
+        },
+        "stop": false,
+        "memory_updates": [
+          "TSLA: re-query recommended because confidence=0.85, decision=0.43, volatility=high",
+          "Prior lessons considered: 36"
+        ],
+        "reasoning": [
+          "Trend is down",
+          "Sentiment confidence is 0.85",
+          "Decision confidence is 0.43"
+        ]
+      },
+      "timestamp": "2026-06-13T09:41:34.114313"
+    },
+    {
+      "ticker": "TSLA",
+      "cycle": 3,
+      "plan": {
+        "objective": "Build an evidence-based recommendation for TSLA",
+        "state_summary": {
+          "article_count": 8,
+          "summary_ready": false,
+          "sentiment_confidence": 0.0,
+          "decision_confidence": 0.0,
+          "volatility": "high"
+        },
+        "steps": [
+          {
+            "tool": "summarize_articles",
+            "arguments": {},
+            "reason": "A summary is still missing"
+          },
+          {
+            "tool": "analyze_sentiment",
+            "arguments": {},
+            "reason": "Sentiment has not been computed yet"
+          },
+          {
+            "tool": "generate_insights",
+            "arguments": {},
+            "reason": "Need actionable observations"
+          },
+          {
+            "tool": "decide_action",
+            "arguments": {},
+            "reason": "Need a recommendation before stopping"
+          }
+        ],
+        "requery": {
+          "needed": true,
+          "tool": "fetch_articles",
+          "arguments": {
+            "count": 5
+          },
+          "reason": "The current evidence is not strong enough to stop yet"
+        },
+        "stop": false,
+        "memory_updates": [
+          "TSLA: re-query recommended because confidence=0.00, decision=0.00, volatility=high",
+          "Prior lessons considered: 36"
+        ],
+        "reasoning": [
+          "Trend is down",
+          "Sentiment confidence is 0.00",
+          "Decision confidence is 0.00"
+        ]
+      },
+      "timestamp": "2026-06-13T09:41:34.114667"
+    },
+    {
+      "ticker": "AAPL",
+      "cycle": 1,
+      "plan": {
+        "objective": "Build an evidence-based recommendation for AAPL",
+        "state_summary": {
+          "article_count": 0,
+          "summary_ready": false,
+          "sentiment_confidence": 0.0,
+          "decision_confidence": 0.0,
+          "volatility": "low"
+        },
+        "steps": [
+          {
+            "tool": "fetch_articles",
+            "arguments": {
+              "count": 3
+            },
+            "reason": "Bootstrap the analysis with current articles"
+          },
+          {
+            "tool": "format_articles",
+            "arguments": {},
+            "reason": "Prepare articles for the LLM"
+          },
+          {
+            "tool": "summarize_articles",
+            "arguments": {},
+            "reason": "Condense the evidence"
+          },
+          {
+            "tool": "analyze_sentiment",
+            "arguments": {},
+            "reason": "Score the tone of the articles"
+          },
+          {
+            "tool": "generate_insights",
+            "arguments": {},
+            "reason": "Convert evidence into trade ideas"
+          },
+          {
+            "tool": "decide_action",
+            "arguments": {},
+            "reason": "Choose the final action"
+          }
+        ],
+        "requery": {
+          "needed": false,
+          "tool": "fetch_articles",
+          "arguments": {},
+          "reason": ""
+        },
+        "stop": false,
+        "memory_updates": [
+          "Prior lessons considered: 37"
+        ],
+        "reasoning": [
+          "Trend is up",
+          "Sentiment confidence is 0.00",
+          "Decision confidence is 0.00"
+        ]
+      },
+      "timestamp": "2026-06-13T09:51:46.374282"
+    },
+    {
+      "ticker": "MSFT",
+      "cycle": 1,
+      "plan": {
+        "objective": "Build an evidence-based recommendation for MSFT",
+        "state_summary": {
+          "article_count": 0,
+          "summary_ready": false,
+          "sentiment_confidence": 0.0,
+          "decision_confidence": 0.0,
+          "volatility": "low"
+        },
+        "steps": [
+          {
+            "tool": "fetch_articles",
+            "arguments": {
+              "count": 3
+            },
+            "reason": "Bootstrap the analysis with current articles"
+          },
+          {
+            "tool": "format_articles",
+            "arguments": {},
+            "reason": "Prepare articles for the LLM"
+          },
+          {
+            "tool": "summarize_articles",
+            "arguments": {},
+            "reason": "Condense the evidence"
+          },
+          {
+            "tool": "analyze_sentiment",
+            "arguments": {},
+            "reason": "Score the tone of the articles"
+          },
+          {
+            "tool": "generate_insights",
+            "arguments": {},
+            "reason": "Convert evidence into trade ideas"
+          },
+          {
+            "tool": "decide_action",
+            "arguments": {},
+            "reason": "Choose the final action"
+          }
+        ],
+        "requery": {
+          "needed": false,
+          "tool": "fetch_articles",
+          "arguments": {},
+          "reason": ""
+        },
+        "stop": false,
+        "memory_updates": [
+          "Prior lessons considered: 38"
+        ],
+        "reasoning": [
+          "Trend is up",
+          "Sentiment confidence is 0.00",
+          "Decision confidence is 0.00"
+        ]
+      },
+      "timestamp": "2026-06-13T09:51:46.374717"
+    },
+    {
+      "ticker": "TSLA",
+      "cycle": 1,
+      "plan": {
+        "objective": "Build an evidence-based recommendation for TSLA",
+        "state_summary": {
+          "article_count": 0,
+          "summary_ready": false,
+          "sentiment_confidence": 0.0,
+          "decision_confidence": 0.0,
+          "volatility": "high"
+        },
+        "steps": [
+          {
+            "tool": "fetch_articles",
+            "arguments": {
+              "count": 3
+            },
+            "reason": "Bootstrap the analysis with current articles"
+          },
+          {
+            "tool": "format_articles",
+            "arguments": {},
+            "reason": "Prepare articles for the LLM"
+          },
+          {
+            "tool": "summarize_articles",
+            "arguments": {},
+            "reason": "Condense the evidence"
+          },
+          {
+            "tool": "analyze_sentiment",
+            "arguments": {},
+            "reason": "Score the tone of the articles"
+          },
+          {
+            "tool": "generate_insights",
+            "arguments": {},
+            "reason": "Convert evidence into trade ideas"
+          },
+          {
+            "tool": "decide_action",
+            "arguments": {},
+            "reason": "Choose the final action"
+          }
+        ],
+        "requery": {
+          "needed": false,
+          "tool": "fetch_articles",
+          "arguments": {},
+          "reason": ""
+        },
+        "stop": false,
+        "memory_updates": [
+          "Prior lessons considered: 39"
+        ],
+        "reasoning": [
+          "Trend is down",
+          "Sentiment confidence is 0.00",
+          "Decision confidence is 0.00"
+        ]
+      },
+      "timestamp": "2026-06-13T09:51:46.375041"
+    },
+    {
+      "ticker": "TSLA",
+      "cycle": 2,
+      "plan": {
+        "objective": "Build an evidence-based recommendation for TSLA",
+        "state_summary": {
+          "article_count": 3,
+          "summary_ready": true,
+          "sentiment_confidence": 0.85,
+          "decision_confidence": 0.43,
+          "volatility": "high"
+        },
+        "steps": [],
+        "requery": {
+          "needed": true,
+          "tool": "fetch_articles",
+          "arguments": {
+            "count": 5
+          },
+          "reason": "The current evidence is not strong enough to stop yet"
+        },
+        "stop": false,
+        "memory_updates": [
+          "TSLA: re-query recommended because confidence=0.85, decision=0.43, volatility=high",
+          "Prior lessons considered: 39"
+        ],
+        "reasoning": [
+          "Trend is down",
+          "Sentiment confidence is 0.85",
+          "Decision confidence is 0.43"
+        ]
+      },
+      "timestamp": "2026-06-13T09:51:46.375338"
+    },
+    {
+      "ticker": "TSLA",
+      "cycle": 3,
+      "plan": {
+        "objective": "Build an evidence-based recommendation for TSLA",
+        "state_summary": {
+          "article_count": 8,
+          "summary_ready": false,
+          "sentiment_confidence": 0.0,
+          "decision_confidence": 0.0,
+          "volatility": "high"
+        },
+        "steps": [
+          {
+            "tool": "summarize_articles",
+            "arguments": {},
+            "reason": "A summary is still missing"
+          },
+          {
+            "tool": "analyze_sentiment",
+            "arguments": {},
+            "reason": "Sentiment has not been computed yet"
+          },
+          {
+            "tool": "generate_insights",
+            "arguments": {},
+            "reason": "Need actionable observations"
+          },
+          {
+            "tool": "decide_action",
+            "arguments": {},
+            "reason": "Need a recommendation before stopping"
+          }
+        ],
+        "requery": {
+          "needed": true,
+          "tool": "fetch_articles",
+          "arguments": {
+            "count": 5
+          },
+          "reason": "The current evidence is not strong enough to stop yet"
+        },
+        "stop": false,
+        "memory_updates": [
+          "TSLA: re-query recommended because confidence=0.00, decision=0.00, volatility=high",
+          "Prior lessons considered: 39"
+        ],
+        "reasoning": [
+          "Trend is down",
+          "Sentiment confidence is 0.00",
+          "Decision confidence is 0.00"
+        ]
+      },
+      "timestamp": "2026-06-13T09:51:46.375590"
+    },
+    {
+      "ticker": "AAPL",
+      "cycle": 1,
+      "plan": {
+        "objective": "Build an evidence-based recommendation for AAPL",
+        "state_summary": {
+          "article_count": 0,
+          "summary_ready": false,
+          "sentiment_confidence": 0.0,
+          "decision_confidence": 0.0,
+          "volatility": "low"
+        },
+        "steps": [
+          {
+            "tool": "fetch_articles",
+            "arguments": {
+              "count": 3
+            },
+            "reason": "Bootstrap the analysis with current articles"
+          },
+          {
+            "tool": "format_articles",
+            "arguments": {},
+            "reason": "Prepare articles for the LLM"
+          },
+          {
+            "tool": "summarize_articles",
+            "arguments": {},
+            "reason": "Condense the evidence"
+          },
+          {
+            "tool": "analyze_sentiment",
+            "arguments": {},
+            "reason": "Score the tone of the articles"
+          },
+          {
+            "tool": "generate_insights",
+            "arguments": {},
+            "reason": "Convert evidence into trade ideas"
+          },
+          {
+            "tool": "decide_action",
+            "arguments": {},
+            "reason": "Choose the final action"
+          }
+        ],
+        "requery": {
+          "needed": false,
+          "tool": "fetch_articles",
+          "arguments": {},
+          "reason": ""
+        },
+        "stop": false,
+        "memory_updates": [
+          "Prior lessons considered: 40"
+        ],
+        "reasoning": [
+          "Trend is up",
+          "Sentiment confidence is 0.00",
+          "Decision confidence is 0.00"
+        ]
+      },
+      "timestamp": "2026-06-13T09:53:19.311140"
+    },
+    {
+      "ticker": "MSFT",
+      "cycle": 1,
+      "plan": {
+        "objective": "Build an evidence-based recommendation for MSFT",
+        "state_summary": {
+          "article_count": 0,
+          "summary_ready": false,
+          "sentiment_confidence": 0.0,
+          "decision_confidence": 0.0,
+          "volatility": "low"
+        },
+        "steps": [
+          {
+            "tool": "fetch_articles",
+            "arguments": {
+              "count": 3
+            },
+            "reason": "Bootstrap the analysis with current articles"
+          },
+          {
+            "tool": "format_articles",
+            "arguments": {},
+            "reason": "Prepare articles for the LLM"
+          },
+          {
+            "tool": "summarize_articles",
+            "arguments": {},
+            "reason": "Condense the evidence"
+          },
+          {
+            "tool": "analyze_sentiment",
+            "arguments": {},
+            "reason": "Score the tone of the articles"
+          },
+          {
+            "tool": "generate_insights",
+            "arguments": {},
+            "reason": "Convert evidence into trade ideas"
+          },
+          {
+            "tool": "decide_action",
+            "arguments": {},
+            "reason": "Choose the final action"
+          }
+        ],
+        "requery": {
+          "needed": false,
+          "tool": "fetch_articles",
+          "arguments": {},
+          "reason": ""
+        },
+        "stop": false,
+        "memory_updates": [
+          "Prior lessons considered: 41"
+        ],
+        "reasoning": [
+          "Trend is up",
+          "Sentiment confidence is 0.00",
+          "Decision confidence is 0.00"
+        ]
+      },
+      "timestamp": "2026-06-13T09:53:19.311460"
+    },
+    {
+      "ticker": "TSLA",
+      "cycle": 1,
+      "plan": {
+        "objective": "Build an evidence-based recommendation for TSLA",
+        "state_summary": {
+          "article_count": 0,
+          "summary_ready": false,
+          "sentiment_confidence": 0.0,
+          "decision_confidence": 0.0,
+          "volatility": "high"
+        },
+        "steps": [
+          {
+            "tool": "fetch_articles",
+            "arguments": {
+              "count": 3
+            },
+            "reason": "Bootstrap the analysis with current articles"
+          },
+          {
+            "tool": "format_articles",
+            "arguments": {},
+            "reason": "Prepare articles for the LLM"
+          },
+          {
+            "tool": "summarize_articles",
+            "arguments": {},
+            "reason": "Condense the evidence"
+          },
+          {
+            "tool": "analyze_sentiment",
+            "arguments": {},
+            "reason": "Score the tone of the articles"
+          },
+          {
+            "tool": "generate_insights",
+            "arguments": {},
+            "reason": "Convert evidence into trade ideas"
+          },
+          {
+            "tool": "decide_action",
+            "arguments": {},
+            "reason": "Choose the final action"
+          }
+        ],
+        "requery": {
+          "needed": false,
+          "tool": "fetch_articles",
+          "arguments": {},
+          "reason": ""
+        },
+        "stop": false,
+        "memory_updates": [
+          "Prior lessons considered: 42"
+        ],
+        "reasoning": [
+          "Trend is down",
+          "Sentiment confidence is 0.00",
+          "Decision confidence is 0.00"
+        ]
+      },
+      "timestamp": "2026-06-13T09:53:19.311627"
+    },
+    {
+      "ticker": "TSLA",
+      "cycle": 2,
+      "plan": {
+        "objective": "Build an evidence-based recommendation for TSLA",
+        "state_summary": {
+          "article_count": 3,
+          "summary_ready": true,
+          "sentiment_confidence": 0.85,
+          "decision_confidence": 0.43,
+          "volatility": "high"
+        },
+        "steps": [],
+        "requery": {
+          "needed": true,
+          "tool": "fetch_articles",
+          "arguments": {
+            "count": 5
+          },
+          "reason": "The current evidence is not strong enough to stop yet"
+        },
+        "stop": false,
+        "memory_updates": [
+          "TSLA: re-query recommended because confidence=0.85, decision=0.43, volatility=high",
+          "Prior lessons considered: 42"
+        ],
+        "reasoning": [
+          "Trend is down",
+          "Sentiment confidence is 0.85",
+          "Decision confidence is 0.43"
+        ]
+      },
+      "timestamp": "2026-06-13T09:53:19.311780"
+    },
+    {
+      "ticker": "TSLA",
+      "cycle": 3,
+      "plan": {
+        "objective": "Build an evidence-based recommendation for TSLA",
+        "state_summary": {
+          "article_count": 8,
+          "summary_ready": false,
+          "sentiment_confidence": 0.0,
+          "decision_confidence": 0.0,
+          "volatility": "high"
+        },
+        "steps": [
+          {
+            "tool": "summarize_articles",
+            "arguments": {},
+            "reason": "A summary is still missing"
+          },
+          {
+            "tool": "analyze_sentiment",
+            "arguments": {},
+            "reason": "Sentiment has not been computed yet"
+          },
+          {
+            "tool": "generate_insights",
+            "arguments": {},
+            "reason": "Need actionable observations"
+          },
+          {
+            "tool": "decide_action",
+            "arguments": {},
+            "reason": "Need a recommendation before stopping"
+          }
+        ],
+        "requery": {
+          "needed": true,
+          "tool": "fetch_articles",
+          "arguments": {
+            "count": 5
+          },
+          "reason": "The current evidence is not strong enough to stop yet"
+        },
+        "stop": false,
+        "memory_updates": [
+          "TSLA: re-query recommended because confidence=0.00, decision=0.00, volatility=high",
+          "Prior lessons considered: 42"
+        ],
+        "reasoning": [
+          "Trend is down",
+          "Sentiment confidence is 0.00",
+          "Decision confidence is 0.00"
+        ]
+      },
+      "timestamp": "2026-06-13T09:53:19.311920"
+    },
+    {
+      "ticker": "AAPL",
+      "cycle": 1,
+      "plan": {
+        "objective": "Build an evidence-based recommendation for AAPL",
+        "state_summary": {
+          "article_count": 0,
+          "summary_ready": false,
+          "sentiment_confidence": 0.0,
+          "decision_confidence": 0.0,
+          "volatility": "low"
+        },
+        "steps": [
+          {
+            "tool": "fetch_articles",
+            "arguments": {
+              "count": 3
+            },
+            "reason": "Bootstrap the analysis with current articles"
+          },
+          {
+            "tool": "format_articles",
+            "arguments": {},
+            "reason": "Prepare articles for the LLM"
+          },
+          {
+            "tool": "summarize_articles",
+            "arguments": {},
+            "reason": "Condense the evidence"
+          },
+          {
+            "tool": "analyze_sentiment",
+            "arguments": {},
+            "reason": "Score the tone of the articles"
+          },
+          {
+            "tool": "generate_insights",
+            "arguments": {},
+            "reason": "Convert evidence into trade ideas"
+          },
+          {
+            "tool": "decide_action",
+            "arguments": {},
+            "reason": "Choose the final action"
+          }
+        ],
+        "requery": {
+          "needed": false,
+          "tool": "fetch_articles",
+          "arguments": {},
+          "reason": ""
+        },
+        "stop": false,
+        "memory_updates": [
+          "Prior lessons considered: 43"
+        ],
+        "reasoning": [
+          "Trend is up",
+          "Sentiment confidence is 0.00",
+          "Decision confidence is 0.00"
+        ]
+      },
+      "timestamp": "2026-06-13T09:54:42.240962"
+    },
+    {
+      "ticker": "MSFT",
+      "cycle": 1,
+      "plan": {
+        "objective": "Build an evidence-based recommendation for MSFT",
+        "state_summary": {
+          "article_count": 0,
+          "summary_ready": false,
+          "sentiment_confidence": 0.0,
+          "decision_confidence": 0.0,
+          "volatility": "low"
+        },
+        "steps": [
+          {
+            "tool": "fetch_articles",
+            "arguments": {
+              "count": 3
+            },
+            "reason": "Bootstrap the analysis with current articles"
+          },
+          {
+            "tool": "format_articles",
+            "arguments": {},
+            "reason": "Prepare articles for the LLM"
+          },
+          {
+            "tool": "summarize_articles",
+            "arguments": {},
+            "reason": "Condense the evidence"
+          },
+          {
+            "tool": "analyze_sentiment",
+            "arguments": {},
+            "reason": "Score the tone of the articles"
+          },
+          {
+            "tool": "generate_insights",
+            "arguments": {},
+            "reason": "Convert evidence into trade ideas"
+          },
+          {
+            "tool": "decide_action",
+            "arguments": {},
+            "reason": "Choose the final action"
+          }
+        ],
+        "requery": {
+          "needed": false,
+          "tool": "fetch_articles",
+          "arguments": {},
+          "reason": ""
+        },
+        "stop": false,
+        "memory_updates": [
+          "Prior lessons considered: 44"
+        ],
+        "reasoning": [
+          "Trend is up",
+          "Sentiment confidence is 0.00",
+          "Decision confidence is 0.00"
+        ]
+      },
+      "timestamp": "2026-06-13T09:54:42.241593"
+    },
+    {
+      "ticker": "TSLA",
+      "cycle": 1,
+      "plan": {
+        "objective": "Build an evidence-based recommendation for TSLA",
+        "state_summary": {
+          "article_count": 0,
+          "summary_ready": false,
+          "sentiment_confidence": 0.0,
+          "decision_confidence": 0.0,
+          "volatility": "high"
+        },
+        "steps": [
+          {
+            "tool": "fetch_articles",
+            "arguments": {
+              "count": 3
+            },
+            "reason": "Bootstrap the analysis with current articles"
+          },
+          {
+            "tool": "format_articles",
+            "arguments": {},
+            "reason": "Prepare articles for the LLM"
+          },
+          {
+            "tool": "summarize_articles",
+            "arguments": {},
+            "reason": "Condense the evidence"
+          },
+          {
+            "tool": "analyze_sentiment",
+            "arguments": {},
+            "reason": "Score the tone of the articles"
+          },
+          {
+            "tool": "generate_insights",
+            "arguments": {},
+            "reason": "Convert evidence into trade ideas"
+          },
+          {
+            "tool": "decide_action",
+            "arguments": {},
+            "reason": "Choose the final action"
+          }
+        ],
+        "requery": {
+          "needed": false,
+          "tool": "fetch_articles",
+          "arguments": {},
+          "reason": ""
+        },
+        "stop": false,
+        "memory_updates": [
+          "Prior lessons considered: 45"
+        ],
+        "reasoning": [
+          "Trend is down",
+          "Sentiment confidence is 0.00",
+          "Decision confidence is 0.00"
+        ]
+      },
+      "timestamp": "2026-06-13T09:54:42.242095"
+    },
+    {
+      "ticker": "TSLA",
+      "cycle": 2,
+      "plan": {
+        "objective": "Build an evidence-based recommendation for TSLA",
+        "state_summary": {
+          "article_count": 3,
+          "summary_ready": true,
+          "sentiment_confidence": 0.85,
+          "decision_confidence": 0.43,
+          "volatility": "high"
+        },
+        "steps": [],
+        "requery": {
+          "needed": true,
+          "tool": "fetch_articles",
+          "arguments": {
+            "count": 5
+          },
+          "reason": "The current evidence is not strong enough to stop yet"
+        },
+        "stop": false,
+        "memory_updates": [
+          "TSLA: re-query recommended because confidence=0.85, decision=0.43, volatility=high",
+          "Prior lessons considered: 45"
+        ],
+        "reasoning": [
+          "Trend is down",
+          "Sentiment confidence is 0.85",
+          "Decision confidence is 0.43"
+        ]
+      },
+      "timestamp": "2026-06-13T09:54:42.242395"
+    },
+    {
+      "ticker": "TSLA",
+      "cycle": 3,
+      "plan": {
+        "objective": "Build an evidence-based recommendation for TSLA",
+        "state_summary": {
+          "article_count": 8,
+          "summary_ready": false,
+          "sentiment_confidence": 0.0,
+          "decision_confidence": 0.0,
+          "volatility": "high"
+        },
+        "steps": [
+          {
+            "tool": "summarize_articles",
+            "arguments": {},
+            "reason": "A summary is still missing"
+          },
+          {
+            "tool": "analyze_sentiment",
+            "arguments": {},
+            "reason": "Sentiment has not been computed yet"
+          },
+          {
+            "tool": "generate_insights",
+            "arguments": {},
+            "reason": "Need actionable observations"
+          },
+          {
+            "tool": "decide_action",
+            "arguments": {},
+            "reason": "Need a recommendation before stopping"
+          }
+        ],
+        "requery": {
+          "needed": true,
+          "tool": "fetch_articles",
+          "arguments": {
+            "count": 5
+          },
+          "reason": "The current evidence is not strong enough to stop yet"
+        },
+        "stop": false,
+        "memory_updates": [
+          "TSLA: re-query recommended because confidence=0.00, decision=0.00, volatility=high",
+          "Prior lessons considered: 45"
+        ],
+        "reasoning": [
+          "Trend is down",
+          "Sentiment confidence is 0.00",
+          "Decision confidence is 0.00"
+        ]
+      },
+      "timestamp": "2026-06-13T09:54:42.242810"
     }
   ],
   "run_history": [
@@ -3682,11 +5150,105 @@
         "GOOGL: UNDECIDED with confidence 0 after 3 cycle(s); sentiment=unknown"
       ],
       "ticker_count": 3
+    },
+    {
+      "run_at": "2026-06-13T09:31:23.427473",
+      "stocks": [
+        "AAPL",
+        "MSFT"
+      ],
+      "lessons": [
+        "AAPL: UNDECIDED with confidence 0 after 3 cycle(s); sentiment=unknown",
+        "MSFT: BUY with confidence 0.79 after 1 cycle(s); sentiment=positive",
+        "GOOGL: UNDECIDED with confidence 0 after 3 cycle(s); sentiment=unknown",
+        "AAPL: ACCUMULATE with confidence 0.67 after 3 cycle(s); sentiment=positive",
+        "MSFT: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive"
+      ],
+      "ticker_count": 2
+    },
+    {
+      "run_at": "2026-06-13T09:38:30.813643",
+      "stocks": [
+        "AAPL",
+        "MSFT"
+      ],
+      "lessons": [
+        "GOOGL: UNDECIDED with confidence 0 after 3 cycle(s); sentiment=unknown",
+        "AAPL: ACCUMULATE with confidence 0.67 after 3 cycle(s); sentiment=positive",
+        "MSFT: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive",
+        "AAPL: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive",
+        "MSFT: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive"
+      ],
+      "ticker_count": 2
+    },
+    {
+      "run_at": "2026-06-13T09:41:34.114797",
+      "stocks": [
+        "AAPL",
+        "MSFT",
+        "TSLA"
+      ],
+      "lessons": [
+        "AAPL: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive",
+        "MSFT: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive",
+        "AAPL: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive",
+        "MSFT: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive",
+        "TSLA: WATCH with confidence 0.43 after 3 cycle(s); sentiment=positive"
+      ],
+      "ticker_count": 3
+    },
+    {
+      "run_at": "2026-06-13T09:51:46.375731",
+      "stocks": [
+        "AAPL",
+        "MSFT",
+        "TSLA"
+      ],
+      "lessons": [
+        "MSFT: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive",
+        "TSLA: WATCH with confidence 0.43 after 3 cycle(s); sentiment=positive",
+        "AAPL: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive",
+        "MSFT: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive",
+        "TSLA: WATCH with confidence 0.43 after 3 cycle(s); sentiment=positive"
+      ],
+      "ticker_count": 3
+    },
+    {
+      "run_at": "2026-06-13T09:53:19.311968",
+      "stocks": [
+        "AAPL",
+        "MSFT",
+        "TSLA"
+      ],
+      "lessons": [
+        "MSFT: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive",
+        "TSLA: WATCH with confidence 0.43 after 3 cycle(s); sentiment=positive",
+        "AAPL: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive",
+        "MSFT: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive",
+        "TSLA: WATCH with confidence 0.43 after 3 cycle(s); sentiment=positive"
+      ],
+      "ticker_count": 3
+    },
+    {
+      "run_at": "2026-06-13T09:54:42.242978",
+      "stocks": [
+        "AAPL",
+        "MSFT",
+        "TSLA"
+      ],
+      "lessons": [
+        "MSFT: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive",
+        "TSLA: WATCH with confidence 0.43 after 3 cycle(s); sentiment=positive",
+        "AAPL: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive",
+        "MSFT: BUY with confidence 0.91 after 1 cycle(s); sentiment=positive",
+        "TSLA: WATCH with confidence 0.43 after 3 cycle(s); sentiment=positive"
+      ],
+      "ticker_count": 3
     }
   ],
   "current_run_stocks": [
     "AAPL",
     "MSFT",
-    "GOOGL"
+    "TSLA"
   ]
 }

@@ -49,7 +49,8 @@ NEWSAPI_ENABLED = bool(NEWSAPI_KEY) and USE_REAL_APIS
 
 # LLM API (OpenAI)
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
-OPENAI_ENABLED = bool(OPENAI_API_KEY) and USE_REAL_APIS
+USE_MOCK_LLM = os.getenv("USE_MOCK_LLM", "true").lower() == "true"
+OPENAI_ENABLED = bool(OPENAI_API_KEY) and USE_REAL_APIS and not USE_MOCK_LLM
 
 # ═══════════════════════════════════════════════════════════════
 # API RATE LIMITS (to avoid hitting limits)
@@ -86,6 +87,7 @@ def get_api_status():
         "alphavantage": ALPHAVANTAGE_ENABLED,
         "newsapi": NEWSAPI_ENABLED,
         "openai": OPENAI_ENABLED,
+        "mock_llm": USE_MOCK_LLM,
     }
     return status
 
@@ -102,10 +104,13 @@ def print_config():
     
     print(f"\nAPI Status:")
     status = get_api_status()
-    for api, enabled in status.items():
+    for api in ("alphavantage", "newsapi", "openai"):
+        enabled = status[api]
         if api != "use_real_apis":
             symbol = "[ON]" if enabled else "[OFF]"
             print(f"  {symbol} {api:15} {'Ready' if enabled else 'Not configured'}")
+    llm_mode = "Mock LLM" if status["mock_llm"] else "OpenAI"
+    print(f"  [MODE] llm             {llm_mode}")
     
     print("\n" + "=" * 60 + "\n")
 

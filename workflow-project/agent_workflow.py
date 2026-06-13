@@ -84,19 +84,19 @@ class StockAnalysisAgent:
     def _analyze_evidence(self, ticker: str, stock_data: dict, articles: list, articles_text: str) -> dict:
         print("  STEP 1: Summarizing evidence...")
         summary = self.processor.summarize_articles(articles_text)
-        print("  ✓ Summary generated")
+        print("  [OK] Summary generated")
 
         print("  STEP 2: Assessing sentiment...")
         sentiment = self.processor.analyze_sentiment(articles_text)
-        print(f"  ✓ Sentiment: {sentiment['overall_sentiment'].upper()}")
+        print(f"  [OK] Sentiment: {sentiment['overall_sentiment'].upper()}")
 
         print("  STEP 3: Generating insights...")
         insights = self.processor.generate_insights(stock_data, articles_text, sentiment)
-        print("  ✓ Insights generated")
+        print("  [OK] Insights generated")
 
         print("  STEP 4: Making decision...")
         decision = self.processor.decide_action(stock_data, summary, sentiment, articles_text)
-        print(f"  ✓ Recommendation: {decision['recommendation'].upper()} (confidence {decision['confidence']})")
+        print(f"  [OK] Recommendation: {decision['recommendation'].upper()} (confidence {decision['confidence']})")
 
         return {
             "stock_data": stock_data,
@@ -164,7 +164,7 @@ class StockAnalysisAgent:
             json.dump({"generated_at": datetime.now().isoformat(), "stocks": self.results}, file_handle, indent=2, default=str)
         saved_files.append(agent_json_path)
 
-        print(f"✓ Agent outputs saved to {output_dir}")
+        print(f"[OK] Agent outputs saved to {output_dir}")
         print(f"  Files: {len(saved_files)} generated")
 
 
@@ -181,7 +181,7 @@ def main():
 
     print("\nSaving agent outputs in multiple formats...")
     agent.save_outputs("./output")
-    print("✓ Agent run complete!\n")
+    print("[OK] Agent run complete!\n")
 
 
 if __name__ == "__main__":
